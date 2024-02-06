@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #000;
   color: #fff;
   position: sticky;
@@ -16,6 +16,7 @@ export const FooterContainer = styled.footer`
 
 export const AsideContainer = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 80%;
   height: 100%;
