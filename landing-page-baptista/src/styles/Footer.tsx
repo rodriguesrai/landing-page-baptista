@@ -1,15 +1,17 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
-  position: relative;
   display: flex;
   justify-content: space-around;
   background-color: #000;
   color: #fff;
+  position: sticky;
+  bottom: 0;
+  left: 0;
   padding: 20px;
   height: 30vh;
   width: 100vw;
-
+  border: solid red 3px;
 `;
 
 export const AsideContainer = styled.div`

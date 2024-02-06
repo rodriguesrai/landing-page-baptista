@@ -18,10 +18,11 @@ const GlobalStyle = createGlobalStyle`
   background-color: #4753f5;
 }
 
-  #root {
-    min-height: 100%;
-    position: relative;
-  }
+
+#root {
+  min-height: 100%;
+  position: relative;
+}
 
   /* Adicione mais estilos de reset conforme necessário */
 `;

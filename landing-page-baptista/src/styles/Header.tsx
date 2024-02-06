@@ -5,10 +5,11 @@ export const HeaderContainer = styled.header`
   align-items: center;
   background-color: #FFD700;
   display: flex;
+  position: sticky;
+  top: 0;
   justify-content: space-around;
   width: 100vw;
-  height: 10%vh;
-  
+  z-index: 99;
 `
 export const ImgLogo = styled.img`
   width: 150px;
