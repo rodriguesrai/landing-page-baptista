@@ -1,18 +1,20 @@
-import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import { GlobalStyle } from './styles/GlobalStyle'
+import Layout from './components/Layout'
+import Inicio from './pages/Inicio'
+import Sobre from './pages/Sobre'
+import Contato from './pages/Contato'
+import Servicos from './pages/Servicos'
 
 function App() {
 
   return (
     <>
       <Routes>
-        <Route path='/' element={ <Header/> }>
-          <Route path='/' element={ <h1>Home</h1> } />
-          <Route path='about' element={ <h1>About</h1> } />
-          <Route path='services' element={ <h1>Services</h1> } />
-          <Route path='contact' element={ <h1>Contact</h1> } />
+        <Route path='/' element={ <Layout/> }>
+          <Route path='/' element={ <Inicio/> } />
+          <Route path='/sobre' element={ <Sobre/> } />
+          <Route path='/contato' element={ <Contato/> } />
+          <Route path='/servicos' element={ <Servicos/> } />
         </Route> 
       </Routes>
     </>
