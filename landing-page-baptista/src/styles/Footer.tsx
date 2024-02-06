@@ -16,38 +16,20 @@ export const FooterContainer = styled.footer`
 
 export const AsideContainer = styled.div`
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 80vw;
+  width: 80%;
   height: 100%;
+
 `;
 
-export const FooterContent = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  h1 {
-    font-size: 1.5rem;
-  }
-  p {
-    font-size: 1rem;
-  }
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  a:hover {
-    font-weight: bold;
-  }
-`
-export const Aside = styled.aside`
+export const AsideContent = styled.aside`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: start;
-  width: 50%;
+  text-align: left;
+  margin-left: 20px;
+  align-items: left;
+  width: auto;
   height: 80%;
   h1 {
     font-size: 1.5rem;

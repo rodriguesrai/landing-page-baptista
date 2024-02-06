@@ -6,8 +6,7 @@ export const MainContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin-top: 50px;
+
 `;
 
 export const ButtonContato = styled.button`
@@ -84,9 +83,9 @@ export const ContainerContato = styled.div`
   display: flex;
   justify-content: center;
   background-color: #ffffff;
-  padding: 100px;
+  padding: 50px;
+  height: 40vh;
   width: 100vw;
-  margin: 20px;
 `;
 
 export const Img = styled.img`
