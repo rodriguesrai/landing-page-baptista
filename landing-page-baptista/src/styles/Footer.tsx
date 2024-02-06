@@ -11,7 +11,7 @@ export const FooterContainer = styled.footer`
   padding: 20px;
   height: 30vh;
   width: 100vw;
-  border: solid red 3px;
+  border-top: #6b652e 1px solid;
 `;
 
 export const AsideContainer = styled.div`

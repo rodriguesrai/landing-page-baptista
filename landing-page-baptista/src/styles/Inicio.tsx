@@ -8,8 +8,6 @@ export const MainContainer = styled.div`
   align-items: center;
   padding: 20px;
   margin-top: 50px;
-  border: solid red 2px
-;
 `;
 
 export const ButtonContato = styled.button`
@@ -56,16 +54,11 @@ export const ButtonContato = styled.button`
 export const AsideContato = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: stretch;
   max-width: 20vw;
-  align-items: center;
-  border: solid red 2px;
   margin-right: 20px;
-  border: solid blue 2px;
 
   p {
-    text-align: left;
-    max-width: 70%;
     margin-bottom: 15px;
     margin-top: 15px;
     font-size: 1rem;
@@ -77,7 +70,6 @@ export const AsideEquipe = styled.div`
   justify-content: center;
   max-width: 80vh;
   align-items: center;
-  border: solid red 2px;
   margin-right: 20px;
 
   p {
@@ -94,7 +86,6 @@ export const ContainerContato = styled.div`
   background-color: #ffffff;
   padding: 100px;
   width: 100vw;
-  border: solid orange 5px;
   margin: 20px;
 `;
 
@@ -118,7 +109,6 @@ export const CardEquipeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: solid red 2px;
   margin: 20px;
 `;
 
