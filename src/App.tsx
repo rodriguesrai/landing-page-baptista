@@ -6,16 +6,15 @@ import Contato from './pages/Contato'
 import Servicos from './pages/Servicos'
 
 function App() {
-
   return (
     <>
       <Routes>
-        <Route path='/' element={ <Layout/> }>
-          <Route path='/' element={ <Inicio/> } />
-          <Route path='/sobre' element={ <Sobre/> } />
-          <Route path='/contato' element={ <Contato/> } />
-          <Route path='/servicos' element={ <Servicos/> } />
-        </Route> 
+        <Route path='/' element={<Layout />}>
+          <Route path='/' element={<Inicio />} />
+          <Route path='/sobre' element={<Sobre />} />
+          <Route path='/contato' element={<Contato />} />
+          <Route path='/servicos' element={<Servicos />} />
+        </Route>
       </Routes>
     </>
   )

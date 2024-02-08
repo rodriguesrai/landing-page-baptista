@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import backgroundImagem from '../assets/atuacao_oabrj_conselhos_tutelares.jpeg'
 
-export const MainContainer = styled.div`
+export const MainContainerInicio = styled.div`
   display: flex;
   z-index: 1;
   flex-direction: column;
@@ -16,7 +17,7 @@ export const EquipeContainer = styled.div`
   margin-right: 20px;
   h1 {
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   p {
@@ -29,17 +30,22 @@ export const EquipeContainer = styled.div`
 export const ContainerContato = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #f2f7ff;
-  padding: 50px;
+  align-items: center;
   height: 95vh;
   width: 100vw;
+  background-image: url(${backgroundImagem});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 15rem;
 `
 
 export const CardEquipeContainer = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 20px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 `
 export const CardContainer = styled.div`
   display: flex;
@@ -51,7 +57,6 @@ export const CardContainer = styled.div`
 export const ButtonContato = styled.button`
   appearance: none;
   background-color: #000000;
-  border: 2px solid #1a1a1a;
   border-radius: 15px;
   box-sizing: border-box;
   color: #ffffff;
@@ -93,7 +98,6 @@ export const ButtonContato = styled.button`
 export const AsideContato = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   max-width: 20vw;
 
@@ -126,4 +130,8 @@ export const IconSocial = styled.img`
   width: 50px;
   height: auto;
   margin: 10px;
+`
+export const ImgLogoStyled = styled.img`
+  width: auto;
+  height: 300px;
 `

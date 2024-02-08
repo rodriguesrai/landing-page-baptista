@@ -1,19 +1,22 @@
 import {
   ButtonContato,
-  MainContainer,
+  MainContainerInicio,
   AsideContato,
   EquipeContainer,
   ContainerContato,
   CardEquipeContainer,
+  ImgLogoStyled,
 } from '../styles/Inicio'
 import Arya from '../assets/arya.jpeg'
+import Logo from '../assets/logo.png'
 import CardEquipe from '../components/Inicio/CardEquipe'
 
 export default function Inicio() {
   return (
     <>
-      <MainContainer>
+      <MainContainerInicio>
         <ContainerContato>
+          <ImgLogoStyled src={Logo} />
           <AsideContato>
             <p>
               Estamos aqui para proteger seus direitos, maximizar seus
@@ -49,7 +52,7 @@ export default function Inicio() {
             />
           </CardEquipeContainer>
         </EquipeContainer>
-      </MainContainer>
+      </MainContainerInicio>
     </>
   )
 }
