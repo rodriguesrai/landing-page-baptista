@@ -77,6 +77,11 @@ export const CardEquipeContainer = styled.div`
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `
 export const CardContainer = styled.div`
   display: flex;

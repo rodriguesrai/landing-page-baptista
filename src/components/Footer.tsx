@@ -1,4 +1,3 @@
-import React from 'react'
 import { AsideContainer, FooterContainer } from '../styles/Footer'
 import AsideFooter from './Footer/AsideFooter'
 
