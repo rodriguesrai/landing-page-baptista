@@ -6,6 +6,7 @@ import {
   ContainerContato,
   CardEquipeContainer,
   ImgLogoStyled,
+  SmallStyled,
 } from '../styles/Inicio'
 import Arya from '../assets/arya.jpeg'
 import Logo from '../assets/logo.png'
@@ -29,10 +30,10 @@ export default function Inicio() {
                 Entre em contato com nossos advogados
               </ButtonContato>
             </a>
-            <small>
+            <SmallStyled>
               Atendimento presencial e{' '}
               <strong>on-line para todo o Brasil.</strong>
-            </small>
+            </SmallStyled>
           </AsideContato>
         </ContainerContato>
         <EquipeContainer>

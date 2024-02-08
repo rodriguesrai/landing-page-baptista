@@ -1,28 +1,40 @@
-import React from 'react'
+import { useState } from 'react'
 import logo from '../assets/banner_logo_advogado.jpg'
-import { HeaderContainer, ImgLogo, NavHeader } from '../styles/Header'
+import {
+  HeaderContainer,
+  ImgLogo,
+  Navbar,
+  NavIconMobile,
+  NavItem,
+} from '../styles/Header'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
+  const [openNav, setOpenNav] = useState(false)
+
+  const toggleNavBar = () => {
+    setOpenNav(!openNav)
+  }
   return (
     <HeaderContainer>
       <Link to='/'>
         <ImgLogo src={logo} alt='Logo Baptista' />
       </Link>
-      <NavHeader>
-        <Link to='/'>
+      <NavIconMobile onClick={toggleNavBar}>Menu</NavIconMobile>
+      <Navbar nav={openNav}>
+        <NavItem to='/'>
           <h1>Início</h1>
-        </Link>
-        <Link to='/sobre'>
+        </NavItem>
+        <NavItem to='/sobre'>
           <h1>Sobre</h1>
-        </Link>
-        <Link to='/contato'>
+        </NavItem>
+        <NavItem to='/contato'>
           <h1>Contato</h1>
-        </Link>
-        <Link to='/servicos'>
+        </NavItem>
+        <NavItem to='/servicos'>
           <h1>Plano de Previdência</h1>
-        </Link>
-      </NavHeader>
+        </NavItem>
+      </Navbar>
     </HeaderContainer>
   )
 }

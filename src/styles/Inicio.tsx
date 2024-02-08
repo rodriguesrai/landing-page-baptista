@@ -38,6 +38,37 @@ export const ContainerContato = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   gap: 15rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+`
+export const AsideContato = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20vw;
+
+  p {
+    text-align: left;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    font-size: 1rem;
+    max-width: 80%;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 80vw;
+    margin-bottom: 3rem;
+    p {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
 `
 
 export const CardEquipeContainer = styled.div`
@@ -95,22 +126,6 @@ export const ButtonContato = styled.button`
   }
 `
 
-export const AsideContato = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 20vw;
-
-  p {
-    text-align: left;
-    margin-bottom: 35px;
-    margin-top: 15px;
-    font-size: 1rem;
-    max-width: 80%;
-    line-height: 1.8;
-  }
-`
-
 export const Img = styled.img`
   width: 200px;
   height: auto;
@@ -134,4 +149,15 @@ export const IconSocial = styled.img`
 export const ImgLogoStyled = styled.img`
   width: auto;
   height: 300px;
+
+  @media (max-width: 768px) {
+    margin-top: 3rem;
+    width: 200px;
+    height: auto;
+  }
+`
+export const SmallStyled = styled.small`
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `
