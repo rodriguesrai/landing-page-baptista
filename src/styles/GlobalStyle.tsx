@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   /* Reset CSS */
@@ -6,6 +6,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   body {
@@ -24,6 +28,6 @@ const GlobalStyle = createGlobalStyle`
 }
 
   /* Adicione mais estilos de reset conforme necessário */
-`;
+`
 
 export default GlobalStyle

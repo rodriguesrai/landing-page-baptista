@@ -1,22 +1,19 @@
-import { Link } from "react-router-dom"
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   align-items: center;
-  background-color: #FFD700;
+  background-color: #0b409c;
   display: flex;
   position: sticky;
   top: 0;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100vw;
+  border-bottom: #fdbe34 1px solid;
   z-index: 99;
 `
 export const ImgLogo = styled.img`
   width: 150px;
   height: 50px;
-`
-export const StyledLink = styled(Link)`
-  text-decoration: none;
 `
 export const NavHeader = styled.nav`
   display: flex;
@@ -24,7 +21,7 @@ export const NavHeader = styled.nav`
   align-items: center;
   width: 25%;
   h1 {
-    color: #e96666;
+    color: black;
     font-size: 1.2rem;
     cursor: pointer;
     margin-left: 5px;

@@ -3,25 +3,32 @@ import styled from 'styled-components'
 export const FooterContainer = styled.footer`
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   background-color: #000;
   color: #fff;
-  position: sticky;
   bottom: 0;
   left: 0;
   padding: 20px;
-  height: 30vh;
+  height: auto;
   width: 100vw;
-  border-top: #6b652e 1px solid;
-`;
+  border-top: #FDBE34 1px solid;
+`
 
 export const AsideContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 80%;
   height: 100%;
-
-`;
+  margin-top: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    & > aside {
+      margin-bottom: 20px;
+    }
+  }
+`
 
 export const AsideContent = styled.aside`
   display: flex;
@@ -29,20 +36,22 @@ export const AsideContent = styled.aside`
   justify-content: space-around;
   text-align: left;
   margin-left: 20px;
-  align-items: left;
   width: auto;
   height: 80%;
-  h1 {
+  h2 {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
   p {
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
-  a {
-    text-decoration: none;
-    color: #fff;
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
   }
-  a:hover {
-    font-weight: bold;
-  }
-`;
+`
