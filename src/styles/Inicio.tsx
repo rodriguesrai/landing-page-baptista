@@ -39,7 +39,6 @@ export const ContainerContato = styled.div`
   background-repeat: no-repeat;
   width: 100%;
   gap: 10rem;
-  border: solid red 3px;
 
   @media (max-width: 768px) {
     display: flex;
