@@ -37,7 +37,7 @@ export const ContainerContato = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  gap: 15rem;
+  gap: 10rem;
 
   @media (max-width: 768px) {
     display: flex;
@@ -50,15 +50,14 @@ export const AsideContato = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 20vw;
-
+  max-width: 35vw;
   p {
     text-align: left;
     margin-bottom: 35px;
     margin-top: 15px;
     font-size: 1rem;
-    max-width: 80%;
-    line-height: 1.8;
+    max-width: 95%;
+    line-height: 2.5;
   }
 
   @media (max-width: 768px) {
