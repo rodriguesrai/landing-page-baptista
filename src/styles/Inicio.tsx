@@ -4,6 +4,7 @@ import backgroundImagem from '../assets/atuacao_oabrj_conselhos_tutelares.jpeg'
 export const MainContainerInicio = styled.div`
   display: flex;
   z-index: 1;
+  max-width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,7 @@ export const EquipeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 80vh;
+  max-width: 80vw;
   align-items: center;
   margin-right: 20px;
   h1 {
@@ -32,12 +33,13 @@ export const ContainerContato = styled.div`
   justify-content: center;
   align-items: center;
   height: 95vh;
-  width: 100vw;
+  max-width: 100vw;
   background-image: url(${backgroundImagem});
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
   gap: 10rem;
+  border: solid red 3px;
 
   @media (max-width: 768px) {
     display: flex;
@@ -51,6 +53,7 @@ export const AsideContato = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 35vw;
+
   p {
     text-align: left;
     margin-bottom: 35px;

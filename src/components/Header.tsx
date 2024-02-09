@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import logo from '../assets/banner_logo_advogado.jpg'
+import navBarMobile from '../assets/profileIcon.svg'
 import {
   HeaderContainer,
   ImgLogo,
+  ImgNavMobile,
   Navbar,
   NavIconMobile,
   NavItem,
@@ -20,7 +22,9 @@ export default function Header() {
       <Link to='/'>
         <ImgLogo src={logo} alt='Logo Baptista' />
       </Link>
-      <NavIconMobile onClick={toggleNavBar}>Menu</NavIconMobile>
+      <NavIconMobile onClick={toggleNavBar}>
+        <ImgNavMobile src={navBarMobile} alt='expande menu' />
+      </NavIconMobile>
       <Navbar nav={openNav}>
         <NavItem to='/'>
           <h1>Início</h1>

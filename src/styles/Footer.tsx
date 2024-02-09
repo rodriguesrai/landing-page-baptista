@@ -10,7 +10,7 @@ export const FooterContainer = styled.footer`
   left: 0;
   padding: 20px;
   height: auto;
-  width: 100vw;
+  max-width: 100vw;
   border-top: #fdbe34 1px solid;
 `
 

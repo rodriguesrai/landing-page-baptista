@@ -7,6 +7,7 @@ import {
   CardEquipeContainer,
   ImgLogoStyled,
   SmallStyled,
+  CardContainer,
 } from '../styles/Inicio'
 import Arya from '../assets/arya.jpeg'
 import Logo from '../assets/logo.png'
@@ -39,18 +40,22 @@ export default function Inicio() {
         <EquipeContainer>
           <h1>Nossa equipe</h1>
           <CardEquipeContainer>
-            <CardEquipe
-              img={Arya}
-              nome='Arya Stark'
-              descricao='Advogada especialista em direito previdenciário'
-              contatoInstagram='beatrizbaptista.adv'
-            />
-            <CardEquipe
-              img={Arya}
-              nome='Arya Stark'
-              descricao='Advogada especialista em direito previdenciário'
-              contatoInstagram='beatrizbaptista.adv'
-            />
+            <CardContainer>
+              <CardEquipe
+                img={Arya}
+                nome='Arya Stark'
+                descricao='Advogada especialista em direito previdenciário'
+                contatoInstagram='beatrizbaptista.adv'
+              />
+            </CardContainer>
+            <CardContainer>
+              <CardEquipe
+                img={Arya}
+                nome='Arya Stark'
+                descricao='Advogada especialista em direito previdenciário'
+                contatoInstagram='beatrizbaptista.adv'
+              />
+            </CardContainer>
           </CardEquipeContainer>
         </EquipeContainer>
       </MainContainerInicio>
