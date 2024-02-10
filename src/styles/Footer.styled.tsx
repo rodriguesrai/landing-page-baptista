@@ -21,6 +21,7 @@ export const AsideContainer = styled.div`
   width: 80%;
   height: 100%;
   margin-top: 20px;
+  gap: 3rem;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -35,7 +36,6 @@ export const AsideContent = styled.aside`
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  margin-left: 20px;
   width: auto;
   height: 80%;
   h2 {

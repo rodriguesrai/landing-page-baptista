@@ -6,6 +6,10 @@ import {
   UnidadeContainer,
   CarouseImage,
   ServicosContainer,
+  FaqContainer,
+  CustomAccordionHeader,
+  CustomAccordionBody,
+  CustomAccordion,
 } from '../styles/Escritorio.styled'
 import 'bootstrap/dist/css/bootstrap.css'
 import Arya from '../assets/arya.jpeg'
@@ -13,7 +17,8 @@ import Carousel from 'react-bootstrap/Carousel'
 import ImageOne from '../assets/escritórios/download (1).jpeg'
 import ImageTwo from '../assets/escritórios/download.jpeg'
 import Imagem3 from '../assets/escritórios/download 3.jpg'
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card, Accordion } from 'react-bootstrap'
+import { FaqData } from '../data/FaqData'
 
 export default function Escritorio() {
   return (
@@ -40,7 +45,7 @@ export default function Escritorio() {
         </CardEquipeContainer>
       </EquipeContainer>
       <UnidadeContainer>
-        <h1>Escritórios</h1>
+        <h1>Unidades</h1>
         <Carousel>
           <Carousel.Item>
             <CarouseImage src={ImageOne} alt='Image One' />
@@ -78,6 +83,20 @@ export default function Escritorio() {
           </Card.Body>
         </Card>
       </ServicosContainer>
+      <FaqContainer>
+        <h1>Perguntas frequentes</h1>
+        {FaqData.map((item, index) => (
+          <CustomAccordion
+            defaultActiveKey={index === 0 ? '0' : null}
+            key={index}
+          >
+            <Accordion.Item eventKey='0'>
+              <CustomAccordionHeader>{item.pergunta}</CustomAccordionHeader>
+              <CustomAccordionBody>{item.resposta}</CustomAccordionBody>
+            </Accordion.Item>
+          </CustomAccordion>
+        ))}
+      </FaqContainer>
     </>
   )
 }

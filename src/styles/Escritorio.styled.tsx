@@ -1,3 +1,4 @@
+import { Accordion } from 'react-bootstrap'
 import styled from 'styled-components'
 
 // equipe
@@ -10,10 +11,6 @@ export const EquipeContainer = styled.div`
   width: 100%;
   align-items: center;
   margin-right: 20px;
-  h1 {
-    font-size: 2rem;
-    margin-top: 2rem;
-  }
 
   p {
     text-align: left;
@@ -46,11 +43,12 @@ export const UnidadeContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 2rem;
 `
 
 export const CarouseImage = styled.img`
-  width: 1000px;
-  height: auto;
+  width: 800px;
+  height: 500px;
 `
 
 // servicos
@@ -60,4 +58,24 @@ export const ServicosContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 2rem;
+`
+export const FaqContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  width: 100%;
+`
+export const CustomAccordion = styled(Accordion)`
+  width: 40vw;
+  margin-bottom: 0.2rem;
+`
+
+export const CustomAccordionHeader = styled(Accordion.Header)`
+  /* width: 40vw; */
+`
+export const CustomAccordionBody = styled(Accordion.Body)`
+  /* width: 40vw; */
 `

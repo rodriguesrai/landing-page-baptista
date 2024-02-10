@@ -23,7 +23,7 @@ export const ImgLogo = styled.img`
   height: 50px;
 `
 export const NavItem = styled(Link)`
-  font-size: 1.2rem;
+  display: flex;
   cursor: pointer;
   text-decoration: none;
   &:hover {
@@ -34,10 +34,11 @@ export const NavItem = styled(Link)`
 
 export const Navbar = styled.nav<NavbarProps>`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: auto;
-  border: solid red 3px;
+  height: 100%;
+  gap: 1rem;
   h1 {
     color: black;
     font-size: 1.2rem;
