@@ -1,4 +1,4 @@
-import { AsideContent } from '../../styles/Footer'
+import { AsideContent } from '../../styles/Footer.styled'
 
 type AsideFooterProps = {
   title1: string

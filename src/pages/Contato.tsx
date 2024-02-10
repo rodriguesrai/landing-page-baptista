@@ -1,3 +1,3 @@
-export default function Contato() {
+export default function Contatos() {
   return <div>Contato</div>
 }

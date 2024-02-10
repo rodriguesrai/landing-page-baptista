@@ -9,25 +9,6 @@ export const MainContainerInicio = styled.div`
   justify-content: center;
   align-items: center;
 `
-export const EquipeContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 80vw;
-  align-items: center;
-  margin-right: 20px;
-  h1 {
-    font-size: 2rem;
-    margin-top: 2rem;
-  }
-
-  p {
-    text-align: left;
-    max-width: 70%;
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-`
 export const ContainerContato = styled.div`
   display: flex;
   justify-content: center;
@@ -70,25 +51,6 @@ export const AsideContato = styled.div`
       margin-bottom: 1rem;
     }
   }
-`
-
-export const CardEquipeContainer = styled.div`
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-`
-export const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `
 
 export const ButtonContato = styled.button`

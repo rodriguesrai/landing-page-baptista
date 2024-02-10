@@ -1,4 +1,4 @@
-import { AsideContainer, FooterContainer } from '../styles/Footer'
+import { AsideContainer, FooterContainer } from '../styles/Footer.styled'
 import AsideFooter from './Footer/AsideFooter'
 
 export default function Footer() {

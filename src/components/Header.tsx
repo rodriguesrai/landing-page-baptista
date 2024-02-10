@@ -8,7 +8,7 @@ import {
   Navbar,
   NavIconMobile,
   NavItem,
-} from '../styles/Header'
+} from '../styles/Header.styled'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
@@ -29,11 +29,11 @@ export default function Header() {
         <NavItem to='/'>
           <h1>Início</h1>
         </NavItem>
-        <NavItem to='/sobre'>
-          <h1>Sobre</h1>
+        <NavItem to='/escritorio'>
+          <h1>O Escritório</h1>
         </NavItem>
-        <NavItem to='/contato'>
-          <h1>Contato</h1>
+        <NavItem to='/contatos'>
+          <h1>Contatos</h1>
         </NavItem>
         <NavItem to='/servicos'>
           <h1>Plano de Previdência</h1>

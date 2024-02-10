@@ -2,16 +2,11 @@ import {
   ButtonContato,
   MainContainerInicio,
   AsideContato,
-  EquipeContainer,
   ContainerContato,
-  CardEquipeContainer,
   ImgLogoStyled,
   SmallStyled,
-  CardContainer,
-} from '../styles/Inicio'
-import Arya from '../assets/arya.jpeg'
+} from '../styles/Inicio.styled'
 import Logo from '../assets/logo.png'
-import CardEquipe from '../components/Inicio/CardEquipe'
 
 export default function Inicio() {
   return (
@@ -37,27 +32,6 @@ export default function Inicio() {
             </SmallStyled>
           </AsideContato>
         </ContainerContato>
-        <EquipeContainer>
-          <h1>Nossa equipe</h1>
-          <CardEquipeContainer>
-            <CardContainer>
-              <CardEquipe
-                img={Arya}
-                nome='Arya Stark'
-                descricao='Advogada especialista em direito previdenciário'
-                contatoInstagram='beatrizbaptista.adv'
-              />
-            </CardContainer>
-            <CardContainer>
-              <CardEquipe
-                img={Arya}
-                nome='Arya Stark'
-                descricao='Advogada especialista em direito previdenciário'
-                contatoInstagram='beatrizbaptista.adv'
-              />
-            </CardContainer>
-          </CardEquipeContainer>
-        </EquipeContainer>
       </MainContainerInicio>
     </>
   )

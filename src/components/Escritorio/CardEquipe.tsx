@@ -1,4 +1,4 @@
-import { IconSocial, ImgEquipe } from '../../styles/Inicio'
+import { IconSocial, ImgEquipe } from '../../styles/Inicio.styled'
 import instagramIcon from '../../assets/instagramIcon.svg'
 
 type CardEquipeProps = {

@@ -6,10 +6,10 @@ type NavbarProps = {
 }
 
 export const HeaderContainer = styled.header`
-  align-items: center;
   background-color: #f2f7ff;
   display: flex;
   position: sticky;
+  align-items: center;
   top: 0;
   height: auto;
   justify-content: space-evenly;
@@ -23,10 +23,8 @@ export const ImgLogo = styled.img`
   height: 50px;
 `
 export const NavItem = styled(Link)`
-  color: black;
   font-size: 1.2rem;
   cursor: pointer;
-  margin-left: 5px;
   text-decoration: none;
   &:hover {
     font-weight: bold;
@@ -38,15 +36,16 @@ export const Navbar = styled.nav<NavbarProps>`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 25%;
+  width: auto;
+  border: solid red 3px;
   h1 {
     color: black;
     font-size: 1.2rem;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 8px;
   }
   h1:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
     transition: 0.5s;
   }
 
