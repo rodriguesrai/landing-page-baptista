@@ -18,7 +18,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import ImageOne from '../assets/escritórios/download (1).jpeg'
 import ImageTwo from '../assets/escritórios/download.jpeg'
 import Imagem3 from '../assets/escritórios/download 3.jpg'
-import { Button, Card, Accordion } from 'react-bootstrap'
+import { Accordion } from 'react-bootstrap'
 import { FaqData } from '../data/FaqData'
 import CardServicos from '../components/Escritorio/CardServicos'
 

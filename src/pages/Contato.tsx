@@ -1,4 +1,3 @@
-import React from 'react'
 import { ContatosContainer } from '../styles/Contatos.styled'
 
 export default function Contatos() {
