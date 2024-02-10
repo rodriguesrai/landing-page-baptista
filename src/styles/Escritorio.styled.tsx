@@ -60,6 +60,13 @@ export const ServicosContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
 `
+export const CardsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+`
+
 export const FaqContainer = styled.div`
   display: flex;
   flex-direction: column;
