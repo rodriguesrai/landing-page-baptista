@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import logo from '../assets/banner_logo_advogado.jpg'
-import navBarMobile from '../assets/profileIcon.svg'
+import IconNavBarMobile from '../assets/align-justify-svgrepo-com.svg'
 import {
   HeaderContainer,
   ImgLogo,
@@ -23,7 +23,7 @@ export default function Header() {
         <ImgLogo src={logo} alt='Logo Baptista' />
       </Link>
       <NavIconMobile onClick={toggleNavBar}>
-        <ImgNavMobile src={navBarMobile} alt='expande menu' />
+        <ImgNavMobile src={IconNavBarMobile} alt='expande menu' />
       </NavIconMobile>
       <Navbar nav={openNav}>
         <NavItem to='/'>

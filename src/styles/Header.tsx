@@ -46,9 +46,8 @@ export const Navbar = styled.nav<NavbarProps>`
     margin-left: 5px;
   }
   h1:hover {
-    font-weight: bold;
-    font-size: 1.4rem;
-    text-decoration: none;
+    transform: scale(1.15);
+    transition: 0.5s;
   }
 
   @media (max-width: 768px) {
@@ -63,6 +62,23 @@ export const Navbar = styled.nav<NavbarProps>`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0 20px 0 20px;
     gap: 1rem;
+
+    ${NavItem} {
+      position: relative;
+      padding-bottom: 0.5rem;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0;
+        bottom: 0;
+        width: 115%;
+        height: 1px;
+        background-color: #ccc;
+      }
+    }
 
     ${NavItem}:first-child {
       margin-top: 1rem;
