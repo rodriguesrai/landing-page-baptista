@@ -2,8 +2,6 @@ import CardEquipe from '../components/Escritorio/CardEquipe'
 import { deploymentsData } from '../data/DeploysData'
 import {
   EquipeContainer,
-  CardEquipeContainer,
-  CardContainer,
   UnidadeContainer,
   CarouseImage,
   ServicosContainer,
