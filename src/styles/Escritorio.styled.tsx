@@ -19,7 +19,7 @@ export const EquipeContainer = styled.div`
     font-size: 1rem;
   }
 `
-export const CardEquipeContainer = styled.div`
+export const CardEquipeMainContainer = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
@@ -31,7 +31,7 @@ export const CardEquipeContainer = styled.div`
     gap: 1rem;
   }
 `
-export const CardContainer = styled.div`
+export const CardPersonContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

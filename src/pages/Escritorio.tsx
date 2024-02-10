@@ -1,4 +1,5 @@
 import CardEquipe from '../components/Escritorio/CardEquipe'
+import { deploymentsData } from '../data/DeploysData'
 import {
   EquipeContainer,
   CardEquipeContainer,
@@ -11,9 +12,9 @@ import {
   CustomAccordionBody,
   CustomAccordion,
   CardsContainer,
+  CardEquipeMainContainer,
 } from '../styles/Escritorio.styled'
 import 'bootstrap/dist/css/bootstrap.css'
-import Arya from '../assets/arya.jpeg'
 import Carousel from 'react-bootstrap/Carousel'
 import ImageOne from '../assets/escritórios/download (1).jpeg'
 import ImageTwo from '../assets/escritórios/download.jpeg'
@@ -27,24 +28,17 @@ export default function Escritorio() {
     <>
       <EquipeContainer>
         <h1>Nossa equipe</h1>
-        <CardEquipeContainer>
-          <CardContainer>
+        <CardEquipeMainContainer>
+          {deploymentsData.map((deploy, index) => (
             <CardEquipe
-              img={Arya}
-              nome='Arya Stark'
-              descricao='Advogada especialista em direito previdenciário'
-              contatoInstagram='beatrizbaptista.adv'
+              key={index}
+              img={deploy.img}
+              nome={deploy.nome}
+              descricao={deploy.descricao}
+              contatoInstagram={deploy.contatoInstagram}
             />
-          </CardContainer>
-          <CardContainer>
-            <CardEquipe
-              img={Arya}
-              nome='Arya Stark'
-              descricao='Advogada especialista em direito previdenciário'
-              contatoInstagram='beatrizbaptista.adv'
-            />
-          </CardContainer>
-        </CardEquipeContainer>
+          ))}
+        </CardEquipeMainContainer>
       </EquipeContainer>
       <UnidadeContainer>
         <h1>Unidades</h1>
