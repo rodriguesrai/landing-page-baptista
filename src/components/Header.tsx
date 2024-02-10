@@ -6,10 +6,13 @@ import {
   ImgLogo,
   ImgNavMobile,
   Navbar,
+  NavDropdownCustom,
+  NavDropdownItemCustom,
   NavIconMobile,
   NavItem,
 } from '../styles/Header.styled'
 import { Link } from 'react-router-dom'
+import { NavDropdown } from 'react-bootstrap'
 
 export default function Header() {
   const [openNav, setOpenNav] = useState(false)
@@ -29,6 +32,16 @@ export default function Header() {
         <NavItem to='/'>
           <h1>Início</h1>
         </NavItem>
+
+        <NavDropdownCustom title='O Escritório' id='nav-dropdown'>
+          <NavDropdownItemCustom href='/escritorio'>
+            Opção 1
+          </NavDropdownItemCustom>
+          <NavDropdownItemCustom href='/outra-opcao'>
+            Opção 2
+          </NavDropdownItemCustom>
+        </NavDropdownCustom>
+
         <NavItem to='/escritorio'>
           <h1>O Escritório</h1>
         </NavItem>

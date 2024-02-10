@@ -1,3 +1,4 @@
+import { NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -29,6 +30,27 @@ export const NavItem = styled(Link)`
   &:hover {
     font-weight: bold;
     font-size: 1.4rem;
+  }
+`
+export const NavDropdownCustom = styled(NavDropdown)`
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: solid red 1px;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+`
+
+export const NavDropdownItemCustom = styled(NavDropdown.Item)`
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    font-weight: bold;
+    transition: 0.5s;
   }
 `
 
