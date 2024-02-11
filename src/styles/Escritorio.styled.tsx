@@ -38,11 +38,6 @@ export const CardPersonContainer = styled.div`
   align-items: center;
 `
 // unidades
-
-// export const CarouseWrapper = styled.div`
-//   display: flex;
-// `
-
 export const UnidadeContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -50,13 +45,6 @@ export const UnidadeContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
 `
-
-// export const CarouseImage = styled.img`
-//   width: 800px;
-//   height: 500px;
-// `
-
-// servicos
 
 export const ServicosContainer = styled.div`
   display: flex;
@@ -71,7 +59,7 @@ export const CardsContainer = styled.div`
   align-items: center;
   gap: 2rem;
 `
-
+// faq
 export const FaqContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -84,10 +72,9 @@ export const CustomAccordion = styled(Accordion)`
   width: 40vw;
   margin-bottom: 0.2rem;
 `
-
 export const CustomAccordionHeader = styled(Accordion.Header)`
-  /* width: 40vw; */
+  width: 40vw;
 `
 export const CustomAccordionBody = styled(Accordion.Body)`
-  /* width: 40vw; */
+  width: 40vw;
 `

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 type NavbarProps = {
-  nav: boolean
+  $nav: string
 }
 
 export const HeaderContainer = styled.header`
@@ -75,7 +75,7 @@ export const Navbar = styled.nav<NavbarProps>`
   }
 
   @media (max-width: 768px) {
-    display: ${(props) => (props.nav ? 'flex' : 'none')};
+    display: ${(props) => (props.$nav === 'open' ? 'flex' : 'none')};
     flex-direction: column;
     position: absolute;
     top: 60px;

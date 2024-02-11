@@ -2,7 +2,6 @@ import { useState } from 'react'
 import logo from '../assets/banner_logo_advogado.jpg'
 import IconNavBarMobile from '../assets/align-justify-svgrepo-com.svg'
 import {
-  H1Styled,
   HeaderContainer,
   ImgLogo,
   ImgNavMobile,
@@ -15,10 +14,10 @@ import {
 import { Link } from 'react-router-dom'
 
 export default function Header() {
-  const [openNav, setOpenNav] = useState(false)
+  const [openNav, setOpenNav] = useState('closed')
 
   const toggleNavBar = () => {
-    setOpenNav(!openNav)
+    setOpenNav(openNav === 'closed' ? 'open' : 'closed')
   }
   return (
     <HeaderContainer>
@@ -29,7 +28,7 @@ export default function Header() {
         <ImgNavMobile src={IconNavBarMobile} alt='expande menu' />
       </NavIconMobile>
 
-      <Navbar nav={openNav}>
+      <Navbar $nav={openNav}>
         <NavItem to='/'>Início</NavItem>
 
         <NavDropdownCustom title='O Escritório' id='nav-dropdown'>

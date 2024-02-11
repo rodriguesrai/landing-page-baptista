@@ -41,7 +41,7 @@ export default function Escritorio() {
         <MyCarousel />
       </UnidadeContainer>
 
-      {/* <ServicosContainer>
+      <ServicosContainer>
         <h1>Serviços</h1>
         <CardsContainer>
           <CardServicos />
@@ -60,7 +60,7 @@ export default function Escritorio() {
             </Accordion.Item>
           </CustomAccordion>
         ))}
-      </FaqContainer> */}
+      </FaqContainer>
     </>
   )
 }
