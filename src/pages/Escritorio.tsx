@@ -12,14 +12,11 @@ import {
   CardsContainer,
   CardEquipeMainContainer,
 } from '../styles/Escritorio.styled'
-import 'bootstrap/dist/css/bootstrap.css'
-import Carousel from 'react-bootstrap/Carousel'
-import ImageOne from '../assets/escritórios/download (1).jpeg'
-import ImageTwo from '../assets/escritórios/download.jpeg'
-import Imagem3 from '../assets/escritórios/download 3.jpg'
+
 import { Accordion } from 'react-bootstrap'
 import { FaqData } from '../data/FaqData'
 import CardServicos from '../components/Escritorio/CardServicos'
+import MyCarousel from '../components/Escritorio/Carousel'
 
 export default function Escritorio() {
   return (
@@ -38,21 +35,13 @@ export default function Escritorio() {
           ))}
         </CardEquipeMainContainer>
       </EquipeContainer>
+
       <UnidadeContainer>
         <h1>Unidades</h1>
-        <Carousel>
-          <Carousel.Item>
-            <CarouseImage src={ImageOne} alt='Image One' />
-          </Carousel.Item>
-          <Carousel.Item>
-            <CarouseImage src={ImageTwo} alt='Image Two' />
-          </Carousel.Item>
-          <Carousel.Item>
-            <CarouseImage src={Imagem3} alt='Image Two' />
-          </Carousel.Item>
-        </Carousel>
+        <MyCarousel />
       </UnidadeContainer>
-      <ServicosContainer>
+
+      {/* <ServicosContainer>
         <h1>Serviços</h1>
         <CardsContainer>
           <CardServicos />
@@ -71,7 +60,7 @@ export default function Escritorio() {
             </Accordion.Item>
           </CustomAccordion>
         ))}
-      </FaqContainer>
+      </FaqContainer> */}
     </>
   )
 }

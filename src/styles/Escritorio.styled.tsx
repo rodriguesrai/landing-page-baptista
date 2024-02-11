@@ -38,6 +38,11 @@ export const CardPersonContainer = styled.div`
   align-items: center;
 `
 // unidades
+
+// export const CarouseWrapper = styled.div`
+//   display: flex;
+// `
+
 export const UnidadeContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -46,10 +51,10 @@ export const UnidadeContainer = styled.div`
   gap: 2rem;
 `
 
-export const CarouseImage = styled.img`
-  width: 800px;
-  height: 500px;
-`
+// export const CarouseImage = styled.img`
+//   width: 800px;
+//   height: 500px;
+// `
 
 // servicos
 

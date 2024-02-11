@@ -25,11 +25,14 @@ export const ImgLogo = styled.img`
 `
 export const NavItem = styled(Link)`
   display: flex;
+  align-items: center;
   cursor: pointer;
   text-decoration: none;
+  font-size: 1.2rem;
+  color: #000;
   &:hover {
-    font-weight: bold;
-    font-size: 1.4rem;
+    transform: scale(1.05);
+    transition: 0.5s;
   }
 `
 export const NavDropdownCustom = styled(NavDropdown)`
@@ -37,7 +40,6 @@ export const NavDropdownCustom = styled(NavDropdown)`
   cursor: pointer;
   text-decoration: none;
   font-size: 1.2rem;
-  border: solid red 1px;
   &:hover {
     transform: scale(1.1);
     transition: 0.5s;
@@ -48,6 +50,7 @@ export const NavDropdownItemCustom = styled(NavDropdown.Item)`
   display: flex;
   cursor: pointer;
   text-decoration: none;
+  color: #000;
   &:hover {
     font-weight: bold;
     transition: 0.5s;
@@ -62,7 +65,6 @@ export const Navbar = styled.nav<NavbarProps>`
   height: 100%;
   gap: 1rem;
   h1 {
-    color: black;
     font-size: 1.2rem;
     cursor: pointer;
     margin-left: 8px;
