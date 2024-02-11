@@ -3,7 +3,6 @@ import { deploymentsData } from '../data/DeploysData'
 import {
   EquipeContainer,
   UnidadeContainer,
-  CarouseImage,
   ServicosContainer,
   FaqContainer,
   CustomAccordionHeader,
