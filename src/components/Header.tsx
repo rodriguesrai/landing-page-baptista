@@ -19,6 +19,7 @@ export default function Header() {
   const toggleNavBar = () => {
     setOpenNav(openNav === 'closed' ? 'open' : 'closed')
   }
+
   return (
     <HeaderContainer>
       <Link to='/'>
@@ -32,10 +33,18 @@ export default function Header() {
         <NavItem to='/'>Início</NavItem>
 
         <NavDropdownCustom title='O Escritório' id='nav-dropdown'>
-          <NavDropdownItemCustom as={Link} to='/escritorio'>
+          <NavDropdownItemCustom
+            as={Link}
+            to='/escritorio'
+            onClick={toggleNavBar}
+          >
             Opção 1
           </NavDropdownItemCustom>
-          <NavDropdownItemCustom as={Link} to='/escritorio'>
+          <NavDropdownItemCustom
+            as={Link}
+            to='/escritorio'
+            onClick={toggleNavBar}
+          >
             FAQ
           </NavDropdownItemCustom>
         </NavDropdownCustom>
