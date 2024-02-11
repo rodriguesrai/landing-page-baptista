@@ -1,4 +1,3 @@
-import React from 'react'
 import ImageOne from '../../assets/escritórios/download (1).jpeg'
 import ImageTwo from '../../assets/escritórios/download.jpeg'
 import Imagem3 from '../../assets/escritórios/download 3.jpg'
