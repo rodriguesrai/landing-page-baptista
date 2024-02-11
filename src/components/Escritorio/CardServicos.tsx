@@ -1,7 +1,6 @@
 import Card from 'react-bootstrap/Card'
 import { ServicosData } from '../../data/ServicosData'
 
-console.log(ServicosData)
 export default function CardServicos() {
   return (
     <>

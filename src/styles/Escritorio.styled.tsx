@@ -31,12 +31,7 @@ export const CardEquipeMainContainer = styled.div`
     gap: 1rem;
   }
 `
-export const CardPersonContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
+
 // unidades
 export const UnidadeContainer = styled.div`
   display: flex;

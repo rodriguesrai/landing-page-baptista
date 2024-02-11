@@ -28,6 +28,35 @@ export const ContainerContato = styled.div`
     height: auto;
   }
 `
+
+// posts
+export const PostagensSectionContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  width: 100%;
+  min-height: auto;
+  background-color: lemonchiffon;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+`
+export const PostsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 100vw;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
 export const AsideContato = styled.div`
   display: flex;
   flex-direction: column;
@@ -101,30 +130,9 @@ export const Img = styled.img`
   margin: 10px;
 `
 
-export const ImgEquipe = styled.img`
-  display: flex;
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-`
-
-export const IconSocial = styled.img`
-  width: 50px;
-  height: auto;
-  margin: 10px;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-  &:hover {
-    transform: scale(1.1);
-  }
-`
-
 export const ImgLogoStyled = styled.img`
   width: auto;
   height: 300px;
-
   @media (max-width: 768px) {
     margin-top: 3rem;
     width: 200px;

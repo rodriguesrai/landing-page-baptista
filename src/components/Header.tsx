@@ -40,7 +40,6 @@ export default function Header() {
           </NavDropdownItemCustom>
         </NavDropdownCustom>
 
-        <NavItem to='/escritorio'>O Escritório</NavItem>
         <NavItem to='/contatos'>Contatos</NavItem>
         <NavItem to='/servicos'>Plano de Previdência</NavItem>
       </Navbar>

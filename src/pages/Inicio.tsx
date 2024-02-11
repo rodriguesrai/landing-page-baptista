@@ -5,8 +5,12 @@ import {
   ContainerContato,
   ImgLogoStyled,
   SmallStyled,
+  PostagensSectionContainer,
+  PostsContainer,
 } from '../styles/Inicio.styled'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/914228.svg'
+import PostThumb from '../assets/thumbpost1.jpeg'
+import Post from '../components/Inicio/Post'
 
 export default function Inicio() {
   return (
@@ -32,6 +36,27 @@ export default function Inicio() {
             </SmallStyled>
           </AsideContato>
         </ContainerContato>
+        <PostagensSectionContainer>
+          <h2>Confira alguns de nossos conteúdos</h2>
+          <PostsContainer>
+            <Post
+              link='https://www.instagram.com/p/C14Nn98riHu/?img_index=1'
+              image={PostThumb}
+            />
+            <Post
+              link='https://www.instagram.com/p/C14Nn98riHu/?img_index=1'
+              image={PostThumb}
+            />
+            <Post
+              link='https://www.instagram.com/p/C14Nn98riHu/?img_index=1'
+              image={PostThumb}
+            />
+            <Post
+              link='https://www.instagram.com/p/C14Nn98riHu/?img_index=1'
+              image={PostThumb}
+            />
+          </PostsContainer>
+        </PostagensSectionContainer>
       </MainContainerInicio>
     </>
   )

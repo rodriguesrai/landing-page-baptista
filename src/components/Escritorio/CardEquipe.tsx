@@ -1,18 +1,22 @@
-import { IconSocial, ImgEquipe } from '../../styles/Inicio.styled'
 import instagramIcon from '../../assets/instagramIcon.svg'
 import { CardEquipeProps } from '../../types/Equipe'
-import { CardPersonContainer } from '../../styles/Escritorio.styled'
+import { CardPersonContainer, ImgEquipe, IconSocial } from './CardEquipe.styled'
 
-export default function CardEquipe(props: CardEquipeProps) {
+export default function CardEquipe({
+  img,
+  nome,
+  descricao,
+  contatoInstagram,
+}: CardEquipeProps) {
   return (
     <>
       <CardPersonContainer>
-        <ImgEquipe src={props.img} alt={props.nome} />
-        <h2>{props.nome}</h2>
-        <p>{props.descricao}</p>
-        {props.contatoInstagram && (
+        <ImgEquipe src={img} alt={nome} />
+        <h2>{nome}</h2>
+        <p>{descricao}</p>
+        {contatoInstagram && (
           <a
-            href={`https://www.instagram.com/${props.contatoInstagram}`}
+            href={`https://www.instagram.com/${contatoInstagram}`}
             target='_blank'
           >
             <IconSocial src={instagramIcon} alt='ícone do instagram' />

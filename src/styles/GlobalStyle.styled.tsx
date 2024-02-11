@@ -11,12 +11,14 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
     
-  /* body, h1, h2, h3, h4, h5, h6, p, ul {
+  body, h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  color: inherit
-}   */
+  color: inherit;
+  line-height: normal;
+  font-family: inherit;
+}  
 
 body {
 
