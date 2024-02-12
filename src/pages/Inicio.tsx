@@ -4,37 +4,43 @@ import {
   AsideContato,
   ContainerContato,
   ImgLogoStyled,
-  SmallStyled,
   PostagensSectionContainer,
   PostsContainer,
+  ContainerImgInicio,
+  BackgroundImage,
 } from '../styles/Inicio.styled'
-import Logo from '../assets/914228.svg'
+import Beatriz1 from '../assets/Beatriz1.jpg'
+import Beatriz2 from '../assets/Beatriz2.jpg'
 import PostThumb from '../assets/thumbpost1.jpeg'
 import Post from '../components/Inicio/Post'
+import logo from '../assets/914228.svg'
 
 export default function Inicio() {
   return (
     <>
       <MainContainerInicio>
+        <BackgroundImage />
         <ContainerContato>
-          <ImgLogoStyled src={Logo} />
           <AsideContato>
+            <ImgLogoStyled src={logo} />
             <p>
-              Estamos aqui para proteger seus direitos, maximizar seus
-              benefícios e guiar você por todos os desafios do sistema
-              previdenciário. Agende uma consulta e fortaleça o seu caminho para
-              uma aposentadoria segura e tranquila.{' '}
+              Escritório de advocacia empenhado em proteger seus direitos,
+              acolher suas dores e <b>cuidar do seu futuro.</b>
             </p>
             <a href='https://w.app/AI3lmU' target='_blank'>
               <ButtonContato>
-                Entre em contato com nossos advogados
+                ENTRE EM CONTATO PARA NOS INFORMAR SEU CASO
               </ButtonContato>
             </a>
-            <SmallStyled>
-              Atendimento presencial e{' '}
-              <strong>on-line para todo o Brasil.</strong>
-            </SmallStyled>
+            <p>
+              Atuamos em <b>diversas áreas do direito</b> com especialistas
+              dedicados em resolver sua questão.
+            </p>
           </AsideContato>
+          <ContainerImgInicio>
+            <ImgLogoStyled src={Beatriz1} />
+            <ImgLogoStyled src={Beatriz2} />
+          </ContainerImgInicio>
         </ContainerContato>
         <PostagensSectionContainer>
           <h2>Confira alguns de nossos conteúdos</h2>

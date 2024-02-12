@@ -13,7 +13,7 @@ export const NavItemContent = styled.div`
   display: flex;
   gap: 0.5rem;
   align-items: flex-start;
-
+  color: var(--headerColorText);
   &:hover {
     border-bottom: 1px solid #bcc44c;
   }
@@ -24,14 +24,18 @@ export const NavItem = styled(Link)`
   width: auto;
   cursor: pointer;
   font-size: 1.2rem;
-  color: #000;
+  color: var(--headerColorText);
+
+  p {
+    color: var(--headerColorText);
+  }
 `
 export const NavItemNoLink = styled.div`
   display: flex;
   width: auto;
   cursor: pointer;
   font-size: 1.2rem;
-  color: #000;
+  color: var(--headerColorText);
 `
 //dropdown
 export const NavItemDropdown = styled(Link)`
@@ -39,7 +43,7 @@ export const NavItemDropdown = styled(Link)`
   width: auto;
   cursor: pointer;
   font-size: 1rem;
-  color: #000;
+  color: var(--headerColorText);
 
   &:hover {
     border-bottom: none;
@@ -50,7 +54,7 @@ export const Dropdown = styled.div<DrowdownProps>`
   flex-direction: column;
   align-items: flex-start;
   margin-left: 2rem;
-
+  color: var(--headerColorText);
   opacity: ${(props) => (props.$dropdown === 'open' ? 1 : 0)};
   height: ${(props) => (props.$dropdown === 'open' ? 'auto' : 0)};
   visibility: ${(props) => (props.$dropdown === 'open' ? 'visible' : 'hidden')};
@@ -63,6 +67,8 @@ export const Dropdown = styled.div<DrowdownProps>`
 `
 
 export const ImgNavItem = styled.img`
+  color: var(--headerColorText);
+  background-color: var(--headerColorBackground);
   width: 20px;
   height: auto;
 `
@@ -80,7 +86,7 @@ export const Navbar = styled.nav<NavbarProps>`
     visibility 0.3s ease-in-out;
   position: absolute;
   top: 55px;
-  background-color: var(--headerColor);
+  background-color: var(--headerColorBackground);
   width: 90vw;
   height: auto;
   z-index: 1;
@@ -92,11 +98,17 @@ export const Navbar = styled.nav<NavbarProps>`
   padding-left: 3rem;
 `
 export const NavIconMobile = styled.button`
+  color: var(--headerColorText);
   display: flex;
   border: none;
   background-color: transparent;
   padding-right: 6rem;
 `
+
+// export const StyledNavIconMobile = styled.div`
+//   color: var(--headerColorText);
+// `
+
 export const ImgNavMobile = styled.img`
   width: 30px;
   height: auto;

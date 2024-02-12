@@ -12,7 +12,7 @@ export const NavItem = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   font-size: 1.2rem;
-  color: #000;
+  color: var(--headerColorText);
   &:hover {
     transform: scale(1.05);
     transition: 0.5s;
@@ -52,4 +52,8 @@ export const Navbar = styled.nav`
   width: auto;
   height: 100%;
   gap: 1rem;
+
+  p {
+    color: var(--headerColorText);
+  }
 `

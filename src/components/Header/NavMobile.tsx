@@ -14,9 +14,15 @@ import {
   NavItemContent,
   NavItemDropdown,
   NavItemNoLink,
+  StyledNavIconMobile,
 } from './NavMobile.styled'
 import { MdArrowDropDown, MdArrowDropDownCircle } from 'react-icons/md'
 import { TbPigMoney } from 'react-icons/tb'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { IoMdClose } from 'react-icons/io'
+import { IoMdHome } from 'react-icons/io'
+import { HiBuildingOffice } from 'react-icons/hi2'
+import { BsTelephone } from 'react-icons/bs'
 
 export default function NavMobile() {
   const [openNav, setOpenNav] = useState('closed')
@@ -33,23 +39,23 @@ export default function NavMobile() {
   return (
     <>
       <NavIconMobile onClick={toggleNavBar}>
-        <ImgNavMobile src={IconNavBarMobile} alt='expande menu' />
+        {openNav === 'closed' ? (
+          <GiHamburgerMenu size={30} />
+        ) : (
+          <IoMdClose size={33} />
+        )}
       </NavIconMobile>
       <Navbar $nav={openNav}>
         <NavItem onClick={toggleNavBar} to='/'>
           <NavItemContent>
-            <ImgNavItem src={IconHome} alt='home' />
+            <IoMdHome size={22} />
             <p>Início</p>
           </NavItemContent>
         </NavItem>
 
         <NavItemNoLink onClick={toggleDropdown}>
           <NavItemContent>
-            <ImgNavItem
-              onClick={toggleDropdown}
-              src={IconEscritorio}
-              alt='escritório'
-            />
+            <HiBuildingOffice size={22} />
             <p>Escritório</p>
             {openDropdown === 'closed' ? (
               <MdArrowDropDown />
@@ -78,14 +84,14 @@ export default function NavMobile() {
 
         <NavItem onClick={toggleNavBar} to='/contatos'>
           <NavItemContent>
-            <ImgNavItem src={IconContatos} alt='home' />
+            <BsTelephone size={22} />
             <p>Contatos</p>
           </NavItemContent>
         </NavItem>
 
         <NavItem onClick={toggleNavBar} to='/servicos'>
           <NavItemContent>
-            <TbPigMoney size={20} />
+            <TbPigMoney size={22} />
             <p>Aposentadoria Planejada</p>
           </NavItemContent>
         </NavItem>
