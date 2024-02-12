@@ -1,20 +1,13 @@
 import { useState } from 'react'
-import IconNavBarMobile from '../../assets/align-justify-svgrepo-com.svg'
-import IconHome from '../../assets/1.svg'
-import IconEscritorio from '../../assets/4.svg'
-import IconContatos from '../../assets/2.svg'
-import IconPrevidencia from '../../assets/3.svg'
+
 import {
   Dropdown,
-  ImgNavItem,
-  ImgNavMobile,
   Navbar,
   NavIconMobile,
   NavItem,
   NavItemContent,
   NavItemDropdown,
   NavItemNoLink,
-  StyledNavIconMobile,
 } from './NavMobile.styled'
 import { MdArrowDropDown, MdArrowDropDownCircle } from 'react-icons/md'
 import { TbPigMoney } from 'react-icons/tb'

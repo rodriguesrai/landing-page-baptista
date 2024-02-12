@@ -66,13 +66,6 @@ export const Dropdown = styled.div<DrowdownProps>`
     visibility 0.3s ease-in-out;
 `
 
-export const ImgNavItem = styled.img`
-  color: var(--headerColorText);
-  background-color: var(--headerColorBackground);
-  width: 20px;
-  height: auto;
-`
-
 export const Navbar = styled.nav<NavbarProps>`
   display: flex;
   flex-direction: column;
@@ -103,13 +96,4 @@ export const NavIconMobile = styled.button`
   border: none;
   background-color: transparent;
   padding-right: 6rem;
-`
-
-// export const StyledNavIconMobile = styled.div`
-//   color: var(--headerColorText);
-// `
-
-export const ImgNavMobile = styled.img`
-  width: 30px;
-  height: auto;
 `
