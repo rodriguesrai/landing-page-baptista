@@ -8,7 +8,11 @@ export default function Header() {
   const [isMobileView, setIsMobileView] = useState(false)
 
   useEffect(() => {
-    setIsMobileView(window.innerWidth <= 768)
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768)
+    }
+
+    window.addEventListener('resize', handleResize)
   }, [])
 
   return (
