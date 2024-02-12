@@ -15,6 +15,7 @@ import {
   NavItemDropdown,
   NavItemNoLink,
 } from './NavMobile.styled'
+import { FaArrowDown, FaArrowRight } from 'react-icons/fa'
 
 export default function NavMobile() {
   const [openNav, setOpenNav] = useState('closed')
@@ -49,6 +50,7 @@ export default function NavMobile() {
               alt='escritório'
             />
             <p>Escritório</p>
+            {openDropdown === 'closed' ? <FaArrowRight /> : <FaArrowDown />}
           </NavItemContent>
         </NavItemNoLink>
 
