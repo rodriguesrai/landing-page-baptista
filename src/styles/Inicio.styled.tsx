@@ -15,17 +15,17 @@ export const ContainerContato = styled.div`
   align-items: center;
   height: 95vh;
   max-width: 100vw;
+  width: 100%;
   background-image: url(${backgroundImagem});
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
   gap: 10rem;
 
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    height: auto;
+    height: 95vh;
   }
 `
 

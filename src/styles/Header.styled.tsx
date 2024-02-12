@@ -12,6 +12,10 @@ export const HeaderContainer = styled.header`
   border-bottom: #fdbe34 1px solid;
   z-index: 99;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    justify-content: space-around;
+  }
 `
 export const ImgLogo = styled.img`
   width: 150px;

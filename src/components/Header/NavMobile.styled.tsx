@@ -1,4 +1,3 @@
-import { NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -6,50 +5,72 @@ type NavbarProps = {
   $nav: string
 }
 
-export const NavDropdownCustom = styled(NavDropdown)`
-  display: flex;
-  cursor: pointer;
-  justify-content: center;
-  font-size: 1.2rem;
-  max-width: 30%;
+type DrowdownProps = {
+  $dropdown: string
+}
 
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
-  z-index: 99;
+export const NavItemContent = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
 
   &:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+    border-bottom: 1px solid #bcc44c;
   }
 `
-
-export const NavDropdownItemCustom = styled(NavDropdown.Item)`
-  display: flex;
-  cursor: pointer;
-  text-decoration: none;
-  color: #000;
-  &:hover {
-    font-weight: bold;
-    transition: 0.5s;
-  }
-`
+// navItens
 export const NavItem = styled(Link)`
   display: flex;
+  width: auto;
   cursor: pointer;
   font-size: 1.2rem;
   color: #000;
-  padding-bottom: 0.5rem;
+`
+export const NavItemNoLink = styled.div`
+  display: flex;
+  width: auto;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #000;
+`
+//dropdown
+export const NavItemDropdown = styled(Link)`
+  display: flex;
+  width: auto;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #000;
 
   &:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
+    border-bottom: none;
   }
+`
+export const Dropdown = styled.div<DrowdownProps>`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+
+  opacity: ${(props) => (props.$dropdown === 'open' ? 1 : 0)};
+  height: ${(props) => (props.$dropdown === 'open' ? 'auto' : 0)};
+  visibility: ${(props) => (props.$dropdown === 'open' ? 'visible' : 'hidden')};
+  gap: 0.7rem;
+
+  transition:
+    opacity 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+`
+
+export const ImgNavItem = styled.img`
+  width: 20px;
+  height: auto;
 `
 
 export const Navbar = styled.nav<NavbarProps>`
   display: flex;
-  align-items: left;
   flex-direction: column;
+  align-items: flex-start;
   opacity: ${(props) => (props.$nav === 'open' ? 1 : 0)};
   height: ${(props) => (props.$nav === 'open' ? 'auto' : 0)};
   visibility: ${(props) => (props.$nav === 'open' ? 'visible' : 'hidden')};
@@ -58,14 +79,13 @@ export const Navbar = styled.nav<NavbarProps>`
     height 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
   position: absolute;
-  left: 0;
-  top: 60px;
+  top: 55px;
   background-color: var(--headerColor);
-  width: 60vw;
+  width: 90vw;
   height: auto;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  gap: 1rem;
+  gap: 1.5rem;
 
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -74,6 +94,8 @@ export const Navbar = styled.nav<NavbarProps>`
 export const NavIconMobile = styled.button`
   display: flex;
   border: none;
+  background-color: transparent;
+  padding-right: 6rem;
 `
 export const ImgNavMobile = styled.img`
   width: 30px;
