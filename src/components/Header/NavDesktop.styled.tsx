@@ -2,19 +2,6 @@ import { NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.header`
-  background-color: #f2f7ff;
-  display: flex;
-  position: sticky;
-  align-items: center;
-  top: 0;
-  height: auto;
-  justify-content: space-evenly;
-  max-width: 100vw;
-  border-bottom: #fdbe34 1px solid;
-  z-index: 99;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-`
 export const ImgLogo = styled.img`
   width: 150px;
   height: 50px;
@@ -61,19 +48,4 @@ export const Navbar = styled.nav`
   width: auto;
   height: 100%;
   gap: 1rem;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`
-export const NavIconMobile = styled.button`
-  display: none;
-  @media (max-width: 768px) {
-    display: flex;
-    border: none;
-  }
-`
-export const ImgNavMobile = styled.img`
-  width: 30px;
-  height: auto;
 `
