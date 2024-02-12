@@ -23,7 +23,7 @@ export default function NavMobile() {
         <NavItem onClick={toggleNavBar} to='/'>
           Início
         </NavItem>
-        {/* <NavDropdownCustom title='Escritório' id='nav-dropdown'>
+        <NavDropdownCustom title='Escritório' id='nav-dropdown'>
           <NavDropdownItemCustom
             as={Link}
             to='/escritorio'
@@ -38,7 +38,7 @@ export default function NavMobile() {
           >
             FAQ
           </NavDropdownItemCustom>
-        </NavDropdownCustom> */}
+        </NavDropdownCustom>
         <NavItem onClick={toggleNavBar} to='/contatos'>
           Contatos
         </NavItem>
