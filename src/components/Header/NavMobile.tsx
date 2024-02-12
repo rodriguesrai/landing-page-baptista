@@ -19,15 +19,11 @@ export default function NavMobile() {
 
   return (
     <>
-      <NavIconMobile onClick={toggleNavBar}>
-        <ImgNavMobile src={IconNavBarMobile} alt='expande menu' />
-      </NavIconMobile>
-
       <Navbar $nav={openNav}>
         <NavItem onClick={toggleNavBar} to='/'>
           Início
         </NavItem>
-        <NavDropdownCustom title='O Escritório' id='nav-dropdown'>
+        {/* <NavDropdownCustom title='Escritório' id='nav-dropdown'>
           <NavDropdownItemCustom
             as={Link}
             to='/escritorio'
@@ -42,7 +38,7 @@ export default function NavMobile() {
           >
             FAQ
           </NavDropdownItemCustom>
-        </NavDropdownCustom>
+        </NavDropdownCustom> */}
         <NavItem onClick={toggleNavBar} to='/contatos'>
           Contatos
         </NavItem>
@@ -50,6 +46,10 @@ export default function NavMobile() {
           Plano de Previdência
         </NavItem>
       </Navbar>
+
+      <NavIconMobile onClick={toggleNavBar}>
+        <ImgNavMobile src={IconNavBarMobile} alt='expande menu' />
+      </NavIconMobile>
     </>
   )
 }

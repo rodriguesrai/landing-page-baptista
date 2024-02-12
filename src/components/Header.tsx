@@ -17,8 +17,8 @@ export default function Header() {
 
   return (
     <HeaderContainer>
-      <LogoHeader />
       {isMobileView ? <NavMobile /> : <NavDesktop />}
+      <LogoHeader />
     </HeaderContainer>
   )
 }

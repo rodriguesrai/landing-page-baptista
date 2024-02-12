@@ -15,12 +15,12 @@ export const NavDropdownCustom = styled(NavDropdown)`
 
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.5rem;
+  z-index: 99;
 
   &:hover {
     transform: scale(1.1);
     transition: 0.5s;
   }
-  z-index: 99;
 `
 
 export const NavDropdownItemCustom = styled(NavDropdown.Item)`
@@ -35,13 +35,11 @@ export const NavDropdownItemCustom = styled(NavDropdown.Item)`
 `
 export const NavItem = styled(Link)`
   display: flex;
-  justify-content: center;
   cursor: pointer;
   font-size: 1.2rem;
   color: #000;
-  max-width: 100%;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #ccc;
+
   &:hover {
     transform: scale(1.05);
     transition: 0.5s;
@@ -50,7 +48,7 @@ export const NavItem = styled(Link)`
 
 export const Navbar = styled.nav<NavbarProps>`
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   opacity: ${(props) => (props.$nav === 'open' ? 1 : 0)};
   height: ${(props) => (props.$nav === 'open' ? 'auto' : 0)};
@@ -60,16 +58,18 @@ export const Navbar = styled.nav<NavbarProps>`
     height 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
   position: absolute;
+  left: 0;
   top: 60px;
   background-color: var(--headerColor);
-  width: 85vw;
+  width: 60vw;
   height: auto;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 0 20px 0 20px;
   gap: 1rem;
+
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 3rem;
 `
 export const NavIconMobile = styled.button`
   display: flex;
