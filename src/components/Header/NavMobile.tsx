@@ -15,7 +15,8 @@ import {
   NavItemDropdown,
   NavItemNoLink,
 } from './NavMobile.styled'
-import { FaArrowDown, FaArrowRight } from 'react-icons/fa'
+import { MdArrowDropDown, MdArrowDropDownCircle } from 'react-icons/md'
+import { TbPigMoney } from 'react-icons/tb'
 
 export default function NavMobile() {
   const [openNav, setOpenNav] = useState('closed')
@@ -50,7 +51,11 @@ export default function NavMobile() {
               alt='escritório'
             />
             <p>Escritório</p>
-            {openDropdown === 'closed' ? <FaArrowRight /> : <FaArrowDown />}
+            {openDropdown === 'closed' ? (
+              <MdArrowDropDown />
+            ) : (
+              <MdArrowDropDownCircle />
+            )}
           </NavItemContent>
         </NavItemNoLink>
 
@@ -80,7 +85,7 @@ export default function NavMobile() {
 
         <NavItem onClick={toggleNavBar} to='/servicos'>
           <NavItemContent>
-            <ImgNavItem src={IconPrevidencia} alt='home' />
+            <TbPigMoney size={20} />
             <p>Aposentadoria Planejada</p>
           </NavItemContent>
         </NavItem>
