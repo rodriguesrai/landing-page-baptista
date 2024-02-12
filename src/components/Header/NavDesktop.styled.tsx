@@ -2,10 +2,6 @@ import { NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-type NavbarProps = {
-  $nav: string
-}
-
 export const HeaderContainer = styled.header`
   background-color: #f2f7ff;
   display: flex;
@@ -45,20 +41,6 @@ export const NavDropdownCustom = styled(NavDropdown)`
     transition: 0.5s;
   }
   z-index: 99;
-
-  @media (max-width: 768px) {
-    &:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      right: 0;
-      bottom: 0;
-      width: 115%;
-      height: 1px;
-      background-color: #ccc;
-    }
-  }
 `
 
 export const NavDropdownItemCustom = styled(NavDropdown.Item)`
@@ -72,7 +54,7 @@ export const NavDropdownItemCustom = styled(NavDropdown.Item)`
   }
 `
 
-export const Navbar = styled.nav<NavbarProps>`
+export const Navbar = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,41 +63,7 @@ export const Navbar = styled.nav<NavbarProps>`
   gap: 1rem;
 
   @media (max-width: 768px) {
-    display: ${(props) => (props.$nav === 'open' ? 'flex' : 'none')};
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    background-color: #f2f7ff;
-    width: 85vw;
-    height: auto;
-    z-index: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0 20px 0 20px;
-    gap: 1rem;
-
-    ${NavItem} {
-      position: relative;
-      padding-bottom: 0.5rem;
-
-      &:after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        right: 0;
-        bottom: 0;
-        width: 115%;
-        height: 1px;
-        background-color: #ccc;
-      }
-    }
-
-    ${NavItem}:first-child {
-      margin-top: 1rem;
-    }
-    ${NavItem}:last-child {
-      margin-bottom: 1rem;
-    }
+    display: none;
   }
 `
 export const NavIconMobile = styled.button`

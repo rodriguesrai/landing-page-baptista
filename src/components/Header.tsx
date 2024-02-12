@@ -1,57 +1,30 @@
-import { useState } from 'react'
-import logo from '../assets/banner_logo_advogado.jpg'
-import IconNavBarMobile from '../assets/align-justify-svgrepo-com.svg'
-import {
-  HeaderContainer,
-  ImgLogo,
-  ImgNavMobile,
-  Navbar,
-  NavDropdownCustom,
-  NavDropdownItemCustom,
-  NavIconMobile,
-  NavItem,
-} from '../styles/Header.styled'
-import { Link } from 'react-router-dom'
+import { HeaderContainer } from '../styles/Header.styled'
+import NavDesktop from './Header/NavDesktop'
+import LogoHeader from './Header/LogoHeader'
+import NavMobile from './Header/NavMobile'
+import { useEffect, useState } from 'react'
 
 export default function Header() {
-  const [openNav, setOpenNav] = useState('closed')
+  const [isMobileView, setIsMobileView] = useState(false)
 
-  const toggleNavBar = () => {
-    setOpenNav(openNav === 'closed' ? 'open' : 'closed')
-  }
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768)
+    }
+
+    handleResize()
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   return (
     <HeaderContainer>
-      <Link to='/'>
-        <ImgLogo src={logo} alt='Logo Baptista' />
-      </Link>
-      <NavIconMobile onClick={toggleNavBar}>
-        <ImgNavMobile src={IconNavBarMobile} alt='expande menu' />
-      </NavIconMobile>
-
-      <Navbar $nav={openNav}>
-        <NavItem to='/'>Início</NavItem>
-
-        <NavDropdownCustom title='O Escritório' id='nav-dropdown'>
-          <NavDropdownItemCustom
-            as={Link}
-            to='/escritorio'
-            onClick={toggleNavBar}
-          >
-            Opção 1
-          </NavDropdownItemCustom>
-          <NavDropdownItemCustom
-            as={Link}
-            to='/escritorio'
-            onClick={toggleNavBar}
-          >
-            FAQ
-          </NavDropdownItemCustom>
-        </NavDropdownCustom>
-
-        <NavItem to='/contatos'>Contatos</NavItem>
-        <NavItem to='/servicos'>Plano de Previdência</NavItem>
-      </Navbar>
+      <LogoHeader />
+      {isMobileView ? <NavMobile /> : <NavDesktop />}
     </HeaderContainer>
   )
 }
