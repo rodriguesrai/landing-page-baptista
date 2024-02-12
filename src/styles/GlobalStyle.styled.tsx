@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+    --headerColor: #f2f7ff;
+
+  }
+  
   * {
     box-sizing: border-box;
     margin: 0;

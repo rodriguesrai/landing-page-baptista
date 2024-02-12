@@ -39,8 +39,7 @@ export const NavItem = styled(Link)`
   cursor: pointer;
   font-size: 1.2rem;
   color: #000;
-
-  max-width: 30%;
+  max-width: 100%;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ccc;
   &:hover {
@@ -50,12 +49,19 @@ export const NavItem = styled(Link)`
 `
 
 export const Navbar = styled.nav<NavbarProps>`
-  display: ${(props) => (props.$nav === 'open' ? 'flex' : 'none')};
+  display: flex;
   align-items: center;
   flex-direction: column;
+  opacity: ${(props) => (props.$nav === 'open' ? 1 : 0)};
+  height: ${(props) => (props.$nav === 'open' ? 'auto' : 0)};
+  visibility: ${(props) => (props.$nav === 'open' ? 'visible' : 'hidden')};
+  transition:
+    opacity 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
   position: absolute;
   top: 60px;
-  background-color: #f2f7ff;
+  background-color: var(--headerColor);
   width: 85vw;
   height: auto;
   z-index: 1;
@@ -64,10 +70,6 @@ export const Navbar = styled.nav<NavbarProps>`
   gap: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
-  .first-nav-item {
-    margin-top: 3rem;
-  }
 `
 export const NavIconMobile = styled.button`
   display: flex;

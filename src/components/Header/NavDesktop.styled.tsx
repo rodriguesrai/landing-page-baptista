@@ -23,11 +23,15 @@ export const NavDropdownCustom = styled(NavDropdown)`
   cursor: pointer;
   text-decoration: none;
   font-size: 1.2rem;
+  z-index: 99;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.5s;
   }
-  z-index: 99;
+
+  & .dropdown-menu {
+    background-color: #f2f7ff;
+  }
 `
 
 export const NavDropdownItemCustom = styled(NavDropdown.Item)`

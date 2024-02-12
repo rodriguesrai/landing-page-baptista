@@ -5,7 +5,7 @@ import NavMobile from './Header/NavMobile'
 import { useEffect, useState } from 'react'
 
 export default function Header() {
-  const [isMobileView, setIsMobileView] = useState(false)
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768)
 
   useEffect(() => {
     const handleResize = () => {

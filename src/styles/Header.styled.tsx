@@ -1,13 +1,7 @@
-import { NavDropdown } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-type NavbarProps = {
-  $nav: string
-}
-
 export const HeaderContainer = styled.header`
-  background-color: #f2f7ff;
+  background-color: var(--headerColor);
   display: flex;
   position: sticky;
   align-items: center;
@@ -22,110 +16,4 @@ export const HeaderContainer = styled.header`
 export const ImgLogo = styled.img`
   width: 150px;
   height: 50px;
-`
-export const NavItem = styled(Link)`
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #000;
-  &:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-  }
-`
-export const NavDropdownCustom = styled(NavDropdown)`
-  display: flex;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.2rem;
-  &:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-  }
-  z-index: 99;
-
-  @media (max-width: 768px) {
-    &:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      right: 0;
-      bottom: 0;
-      width: 115%;
-      height: 1px;
-      background-color: #ccc;
-    }
-  }
-`
-
-export const NavDropdownItemCustom = styled(NavDropdown.Item)`
-  display: flex;
-  cursor: pointer;
-  text-decoration: none;
-  color: #000;
-  &:hover {
-    font-weight: bold;
-    transition: 0.5s;
-  }
-`
-
-export const Navbar = styled.nav<NavbarProps>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 100%;
-  gap: 1rem;
-
-  @media (max-width: 768px) {
-    display: ${(props) => (props.$nav === 'open' ? 'flex' : 'none')};
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    background-color: #f2f7ff;
-    width: 85vw;
-    height: auto;
-    z-index: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0 20px 0 20px;
-    gap: 1rem;
-
-    ${NavItem} {
-      position: relative;
-      padding-bottom: 0.5rem;
-
-      &:after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        right: 0;
-        bottom: 0;
-        width: 115%;
-        height: 1px;
-        background-color: #ccc;
-      }
-    }
-
-    ${NavItem}:first-child {
-      margin-top: 1rem;
-    }
-    ${NavItem}:last-child {
-      margin-bottom: 1rem;
-    }
-  }
-`
-export const NavIconMobile = styled.button`
-  display: none;
-  @media (max-width: 768px) {
-    display: flex;
-    border: none;
-  }
-`
-export const ImgNavMobile = styled.img`
-  width: 30px;
-  height: auto;
 `

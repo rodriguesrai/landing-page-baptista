@@ -11,7 +11,7 @@ export default function NavDesktop() {
     <>
       <Navbar>
         <NavItem to='/'>Início</NavItem>
-        <NavDropdownCustom title='O Escritório' id='nav-dropdown'>
+        <NavDropdownCustom title='O Escritório' id='nv-dropdown'>
           <NavDropdownItemCustom as={Link} to='/escritorio'>
             Unidades
           </NavDropdownItemCustom>
