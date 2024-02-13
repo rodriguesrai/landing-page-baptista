@@ -69,6 +69,7 @@ export const Dropdown = styled.div<DrowdownProps>`
 export const Navbar = styled.nav<NavbarProps>`
   display: flex;
   flex-direction: column;
+  position: absolute;
   align-items: flex-start;
   opacity: ${(props) => (props.$nav === 'open' ? 1 : 0)};
   height: ${(props) => (props.$nav === 'open' ? 'auto' : 0)};
@@ -77,7 +78,6 @@ export const Navbar = styled.nav<NavbarProps>`
     opacity 0.3s ease-in-out,
     height 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
-  position: absolute;
   top: 102%;
   background-color: var(--headerColorBackground);
   width: 90vw;
@@ -95,5 +95,4 @@ export const NavIconMobile = styled.button`
   display: flex;
   border: none;
   background-color: transparent;
-  padding-right: 6rem;
 `
