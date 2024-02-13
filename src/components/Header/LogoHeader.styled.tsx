@@ -4,3 +4,7 @@ export const ImgLogo = styled.img`
   width: 150px;
   height: 50px;
 `
+export const H1Styled = styled.h1`
+  font-size: 2.2rem;
+  color: var(--headerColorText);
+`

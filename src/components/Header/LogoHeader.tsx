@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
+import { H1Styled } from './LogoHeader.styled'
 
 export default function LogoHeader() {
   return (
     <>
       <Link to='/'>
-        <h1>PB ADVOCACIA</h1>
+        <H1Styled>PB ADVOCACIA</H1Styled>
       </Link>
     </>
   )

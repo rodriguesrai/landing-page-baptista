@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --headerColorBackground: #b7d3a8;
     --headerColorText: #000000;
+    --borderBottomHeader: #106e06ef;
 
   }
   

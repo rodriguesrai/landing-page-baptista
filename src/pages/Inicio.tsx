@@ -14,6 +14,7 @@ import Beatriz2 from '../assets/Beatriz2.jpg'
 import PostThumb from '../assets/thumbpost1.jpeg'
 import Post from '../components/Inicio/Post'
 import logo from '../assets/914228.svg'
+import { Link } from 'react-router-dom'
 
 export default function Inicio() {
   return (
@@ -27,11 +28,11 @@ export default function Inicio() {
               Escritório de advocacia empenhado em proteger seus direitos,
               acolher suas dores e <b>cuidar do seu futuro.</b>
             </p>
-            <a href='https://w.app/AI3lmU' target='_blank'>
+            <Link to='/contatos'>
               <ButtonContato>
                 ENTRE EM CONTATO PARA NOS INFORMAR SEU CASO
               </ButtonContato>
-            </a>
+            </Link>
             <p>
               Atuamos em <b>diversas áreas do direito</b> com especialistas
               dedicados em resolver sua questão.
