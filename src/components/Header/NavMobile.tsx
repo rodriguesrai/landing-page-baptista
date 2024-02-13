@@ -66,12 +66,6 @@ export default function NavMobile() {
             <NavItemDropdown onClick={toggleNavBar} to='/escritorio'>
               Áreas de atuação
             </NavItemDropdown>
-            <NavItemDropdown onClick={toggleNavBar} to='/escritorio'>
-              Serviços
-            </NavItemDropdown>
-            <NavItemDropdown onClick={toggleNavBar} to='/escritorio'>
-              Unidades
-            </NavItemDropdown>
           </Dropdown>
         )}
 

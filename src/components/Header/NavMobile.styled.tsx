@@ -78,7 +78,7 @@ export const Navbar = styled.nav<NavbarProps>`
     height 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
   position: absolute;
-  top: 55px;
+  top: 102%;
   background-color: var(--headerColorBackground);
   width: 90vw;
   height: auto;

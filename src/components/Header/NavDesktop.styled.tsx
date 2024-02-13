@@ -72,7 +72,7 @@ export const Navbar = styled.nav`
 
 export const Dropdown = styled.div<DrowdownProps>`
   position: absolute;
-  top: 145%; /* Posiciona abaixo do header */
+  top: 135%; /* Posiciona abaixo do header */
   width: auto; /* Largura total do elemento pai (NavItemNoLink) */
   left: 15%;
   display: flex;

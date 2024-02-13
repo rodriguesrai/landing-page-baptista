@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
+  position: relative;
   background-color: var(--headerColorBackground);
   display: flex;
   position: sticky;
