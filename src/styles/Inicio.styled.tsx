@@ -12,13 +12,10 @@ export const MainContainerInicio = styled.div`
 
 export const BackgroundImage = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-image: url(${imagemdefundo});
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
   opacity: 0.08;
   z-index: -1;
 `

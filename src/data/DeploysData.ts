@@ -14,4 +14,22 @@ export const deploymentsData: CardEquipeProps[] = [
     descricao: 'Advogada especialista em direito previdenciário',
     contatoInstagram: 'beatrizbaptista.adv',
   },
+  {
+    img: '/images/arya.jpeg',
+    nome: 'Arya Stark',
+    descricao: 'Advogada especialista em direito previdenciário',
+    contatoInstagram: 'beatrizbaptista.adv',
+  },
+  {
+    img: '/images/arya.jpeg',
+    nome: 'Arya Stark',
+    descricao: 'Advogada especialista em direito previdenciário',
+    contatoInstagram: 'beatrizbaptista.adv',
+  },
+  {
+    img: '/images/arya.jpeg',
+    nome: 'Arya Stark',
+    descricao: 'Advogada especialista em direito previdenciário',
+    contatoInstagram: 'beatrizbaptista.adv',
+  },
 ]

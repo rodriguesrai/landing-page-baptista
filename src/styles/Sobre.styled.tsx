@@ -4,10 +4,12 @@ export const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5rem;
   gap: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  border: 5px solid red;
 `
 
 // equipe
@@ -16,28 +18,39 @@ export const EquipeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100vw;
+  max-width: 100%;
   width: 100%;
-  align-items: center;
-  margin-right: 20px;
+  gap: 3rem;
+  padding-top: 3rem;
+`
+export const TextEquip = styled.p`
+  max-width: 55%;
+  line-height: 2rem;
+  text-align: justify;
 
-  p {
-    text-align: left;
-    max-width: 70%;
-    margin-top: 1rem;
-    font-size: 1rem;
+  @media (max-width: 1200px) {
+    max-width: 80%;
   }
 `
+
 export const CardEquipeMainContainer = styled.div`
   display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  justify-content: space-evenly;
+  max-width: 55%;
+  min-height: auto;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  @media (max-width: 1200px) {
+    max-width: 80%;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    width: 100%;
   }
 `
 
@@ -47,12 +60,7 @@ export const UnidadeContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
-`
-
-export const CardsContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 100vw;
+  width: 100%;
   gap: 2rem;
 `

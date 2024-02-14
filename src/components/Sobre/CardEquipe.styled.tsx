@@ -5,13 +5,22 @@ export const CardPersonContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  gap: 1rem;
+  padding-top: 1rem;
+  background-color: aliceblue;
+
+  p {
+    text-align: center;
+    width: 60%;
+  }
 `
+
 export const ImgEquipe = styled.img`
   display: flex;
   width: 200px;
   height: auto;
   border-radius: 50%;
-  margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `
 export const IconSocial = styled.img`

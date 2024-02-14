@@ -1,4 +1,4 @@
-export const CamposPictures = {
+export const CamposUnit = {
   local: 'Campos dos Goytacazes',
   imageSrc: [
     'https://www.meutimao.com.br/fotos-do-corinthians/w941/2024/02/11/maycon_comemora_tento_com_a_torcida_do_corinthians_7hu7.jpg',
@@ -7,7 +7,7 @@ export const CamposPictures = {
   ],
 }
 
-export const CambuciPictures = {
+export const CambuciUnit = {
   local: 'Cambuci',
   imageSrc: [
     'https://www.meutimao.com.br/fotos-do-corinthians/w941/2024/02/11/maycon_comemora_tento_com_a_torcida_do_corinthians_7hu7.jpg',
