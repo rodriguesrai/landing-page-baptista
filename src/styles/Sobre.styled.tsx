@@ -9,7 +9,6 @@ export const PageWrapper = styled.div`
   height: 100%;
   padding-bottom: 5rem;
   gap: 3rem;
-  border: 5px solid red;
 `
 
 // equipe
