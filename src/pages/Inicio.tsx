@@ -8,6 +8,7 @@ import {
   PostsContainer,
   ContainerImgInicio,
   BackgroundImage,
+  ImgEquipeStyled,
 } from '../styles/Inicio.styled'
 import Beatriz1 from '../assets/Beatriz1.jpg'
 import Beatriz2 from '../assets/Beatriz2.jpg'
@@ -39,8 +40,8 @@ export default function Inicio() {
             </p>
           </AsideContato>
           <ContainerImgInicio>
-            <ImgLogoStyled src={Beatriz1} />
-            <ImgLogoStyled src={Beatriz2} />
+            <ImgEquipeStyled src={Beatriz1} />
+            <ImgEquipeStyled src={Beatriz2} />
           </ContainerImgInicio>
         </ContainerContato>
         <PostagensSectionContainer>

@@ -60,10 +60,10 @@ export default function NavMobile() {
 
         {openDropdown === 'open' && (
           <Dropdown $dropdown={openDropdown}>
-            <NavItemDropdown onClick={toggleNavBar} to='/escritorio'>
+            <NavItemDropdown onClick={toggleNavBar} to='/sobre'>
               Quem Somos
             </NavItemDropdown>
-            <NavItemDropdown onClick={toggleNavBar} to='/escritorio'>
+            <NavItemDropdown onClick={toggleNavBar} to='/servicos'>
               Áreas de atuação
             </NavItemDropdown>
           </Dropdown>

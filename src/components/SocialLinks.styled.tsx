@@ -7,6 +7,7 @@ export const SocialImg = styled.img`
 export const SocialLinksContainer = styled.div`
   display: flex;
   flex-direction: column;
+  z-index: 99;
   align-items: center;
   gap: 0.5rem;
   justify-content: center;
@@ -17,8 +18,7 @@ export const SocialLinksContainer = styled.div`
   width: 3rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  background-color: var(--headerColorBackground);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border: 2px solid var(--borderBottomHeader);
+  border-right: none;
   border-radius: 10px 0 0 10px;
 `
