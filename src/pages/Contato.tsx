@@ -1,41 +1,47 @@
-import { ContatosContainer } from '../styles/Contatos.styled'
+import {
+  ButtonStyled,
+  ButtonsContainer,
+  ContatosWrapper,
+  EnderecosContainer,
+  ImgButtonEmail,
+  ImgButtonInstagram,
+  ImgButtonWhats,
+  PageWraperContato,
+  TextsContainer,
+} from '../styles/Contatos.styled'
 
 export default function Contatos() {
   return (
     <>
-      <ContatosContainer>
-        <h1>Contatos</h1>
-
-        <h2>Atendimento em Todo Brasil</h2>
-        <p>
-          Estamos dedicados a fornecer serviços jurídicos de qualidade para
-          clientes em todo o Brasil. Independentemente da sua localização,
-          estamos aqui para ajudar. Entre em contato conosco para obter
-          assistência legal profissional e personalizada.
-        </p>
-        {/* Informações de Contato */}
-        <div>
-          <h2>Entre em Contato</h2>
-          <p>Email: contato@baptistaadvocacia.com</p>
-          <p>WhatsApp: (11) 1234-5678</p>
-          <p>Instagram: @baptista.adv</p>
-        </div>
-
-        {/* Endereços */}
-        <div>
-          <h2>Nossos Endereços</h2>
-          <p>Escritório Principal:</p>
-          <p>Rua Principal, 123 - Centro</p>
-          <p>Cidade - Estado</p>
-
-          <p>Filial 1:</p>
-          <p>Avenida Secundária, 456 - Bairro</p>
-          <p>Cidade - Estado</p>
-        </div>
-
-        {/* Atendimento para Todo Brasil */}
-        <div></div>
-      </ContatosContainer>
+      <PageWraperContato>
+        <TextsContainer>
+          <h2>Entre em contato e agende uma consulta.</h2>
+          <h3>Atendimento para todo o Brasil.</h3>
+        </TextsContainer>
+        <ContatosWrapper>
+          <EnderecosContainer>
+            <h2>Nossos Endereços</h2>
+            <p>Campos dos Goytacazes - RJ</p>
+            <p>Rua Voluntários da Pátria, 487, Sala 503 | CEP 28035-260</p>
+            <p>Cambuci - RJ</p>
+            <p>Rua Faustino Mamede, 64, centro | CEP 28430-000</p>
+          </EnderecosContainer>
+          <ButtonsContainer>
+            <ButtonStyled href='https://w.app/AI3lmU'>
+              <ImgButtonWhats />
+              {'(22) 98146-7225'}
+            </ButtonStyled>
+            <ButtonStyled>
+              <ImgButtonEmail />
+              baptistaadvocacia.rj@gmail.com
+            </ButtonStyled>
+            <ButtonStyled>
+              <ImgButtonInstagram />
+              baptistaadvocacia.rj@gmail.com
+            </ButtonStyled>
+          </ButtonsContainer>
+        </ContatosWrapper>
+      </PageWraperContato>
     </>
   )
 }
