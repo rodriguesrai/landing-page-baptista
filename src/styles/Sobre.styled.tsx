@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const PageWrapper = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   max-width: 100vw;
