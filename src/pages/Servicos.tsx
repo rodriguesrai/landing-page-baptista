@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import { PageWrapper } from '../components/Servicos/Servicos.styled'
 import { Accordion } from 'react-bootstrap'
 import CardServicos from '../components/Sobre/CardServicos'
