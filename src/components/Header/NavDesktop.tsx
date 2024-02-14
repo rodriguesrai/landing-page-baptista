@@ -28,10 +28,10 @@ export default function NavDesktop() {
           )}
         </NavitemnNoLinkContainer>
         <Dropdown $dropdown={openDropdown}>
-          <NavItemDropdown onClick={toggleDropdown} to='/escritorio'>
+          <NavItemDropdown onClick={toggleDropdown} to='sobre'>
             Quem Somos
           </NavItemDropdown>
-          <NavItemDropdown onClick={toggleDropdown} to='/escritorio'>
+          <NavItemDropdown onClick={toggleDropdown} to='/servicos'>
             Áreas de Atuação
           </NavItemDropdown>
         </Dropdown>

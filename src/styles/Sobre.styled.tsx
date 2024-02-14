@@ -1,5 +1,14 @@
-import { Accordion } from 'react-bootstrap'
 import styled from 'styled-components'
+
+export const PageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`
 
 // equipe
 export const EquipeContainer = styled.div`
@@ -41,35 +50,9 @@ export const UnidadeContainer = styled.div`
   gap: 2rem;
 `
 
-export const ServicosContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-`
 export const CardsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-`
-// faq
-export const FaqContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100vw;
-  width: 100%;
-`
-export const CustomAccordion = styled(Accordion)`
-  width: 40vw;
-  margin-bottom: 0.2rem;
-`
-export const CustomAccordionHeader = styled(Accordion.Header)`
-  width: 40vw;
-`
-export const CustomAccordionBody = styled(Accordion.Body)`
-  width: 40vw;
 `

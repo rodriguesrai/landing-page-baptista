@@ -26,11 +26,6 @@ const GlobalStyle = createGlobalStyle`
   line-height: normal;
   font-family: inherit;
 }  
-
-body {
-
-
-}
 `
 
 export default GlobalStyle
