@@ -3,28 +3,67 @@ import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
 
 export const PageWraperContato = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 100vw;
   width: 100%;
-  height: 95vh;
-  padding-bottom: 5rem;
+  min-height: 95vh;
+  height: 100%;
   gap: 8rem;
+  padding: 2rem;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding-top: 5rem;
+  }
+
+  @media (max-width: 1200px) {
+    padding-top: 5rem;
+  }
 `
 
 export const ContatosWrapper = styled.div`
   display: flex;
-  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  max-width: 100%;
 `
+
+// enderecos
 export const EnderecosContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   gap: 2rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+  }
 `
+
+export const EnderecoWithIcon = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+`
+export const EnderecoText = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`
+//
 export const TextsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -42,18 +81,21 @@ export const LinksContainer = styled.div`
   gap: 3rem;
   padding-top: 3rem;
 `
-
+// buttons
 export const ButtonsContainer = styled.div`
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  max-width: 100%;
 `
-
+// button
 export const ButtonStyled = styled.a`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
   justify-content: center;
   background-color: #13aa52;
   border: 1px solid #13aa52;
@@ -63,16 +105,14 @@ export const ButtonStyled = styled.a`
   cursor: pointer;
   font-size: 2rem;
   outline: none;
-  outline: 0;
-  padding: 10px 25px;
+  padding: 8px 20px;
   text-align: center;
-  transform: translateY(0);
   transition:
     transform 150ms,
     box-shadow 150ms;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
+
+
 
   &:hover {
     background-color: #0c7e3c;

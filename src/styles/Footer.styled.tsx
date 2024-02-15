@@ -19,14 +19,20 @@ export const AsideContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 80%;
-  height: 100%;
-  margin-top: 20px;
+  height: auto;
+  margin-top: 1rem;
   gap: 3rem;
+
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    text-align: left;
+
+    gap: 1.5rem;
     & > aside {
-      margin-bottom: 20px;
+      width: 100%;
+      justify-content: left;
+      align-items: left;
     }
   }
 `
@@ -51,7 +57,6 @@ export const AsideContent = styled.aside`
     margin-bottom: 2rem;
   }
   @media (max-width: 768px) {
-    align-items: center;
-    text-align: center;
+    text-align: left;
   }
 `
