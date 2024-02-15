@@ -94,8 +94,9 @@ export const ButtonsContainer = styled.div`
 export const ButtonStyled = styled.a`
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   max-width: 100%;
+  gap: 0.5rem;
+  word-break: break-word; // quebra o texto do botão
   justify-content: center;
   background-color: #13aa52;
   border: 1px solid #13aa52;
@@ -115,6 +116,10 @@ export const ButtonStyled = styled.a`
   &:hover {
     background-color: #0c7e3c;
     border: 1px solid #0c7e3c;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
   }
 `
 export const ImgButtonWhats = styled(FaWhatsapp)`
