@@ -112,8 +112,6 @@ export const ButtonStyled = styled.a`
     box-shadow 150ms;
   touch-action: manipulation;
 
-
-
   &:hover {
     background-color: #0c7e3c;
     border: 1px solid #0c7e3c;
