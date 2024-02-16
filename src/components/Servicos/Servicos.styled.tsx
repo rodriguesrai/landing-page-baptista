@@ -6,8 +6,9 @@ export const PageServicosWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: auto;
   gap: 2rem;
-  padding: 0.5rem;
+  padding: 3rem 1rem;
 `
 
 // servicos

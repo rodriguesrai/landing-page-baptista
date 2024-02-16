@@ -9,13 +9,13 @@ import {
   ContainerImgInicio,
   BackgroundImage,
   ImgEquipeStyled,
+  LinkStyled,
 } from '../styles/Inicio.styled'
 import Beatriz1 from '../assets/Beatriz1.jpg'
 import Beatriz2 from '../assets/Beatriz2.jpg'
 import PostThumb from '../assets/thumbpost1.jpeg'
 import Post from '../components/Inicio/Post'
 import logo from '../assets/914228.svg'
-import { Link } from 'react-router-dom'
 
 export default function Inicio() {
   return (
@@ -29,11 +29,11 @@ export default function Inicio() {
               Escritório de advocacia empenhado em proteger seus direitos,
               acolher suas dores e <b>cuidar do seu futuro.</b>
             </p>
-            <Link to='/contatos'>
+            <LinkStyled to='/contatos'>
               <ButtonContato>
                 ENTRE EM CONTATO PARA NOS INFORMAR SEU CASO
               </ButtonContato>
-            </Link>
+            </LinkStyled>
             <p>
               Atuamos em <b>diversas áreas do direito</b> com especialistas
               dedicados em resolver sua questão.

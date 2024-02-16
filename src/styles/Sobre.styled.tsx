@@ -29,6 +29,7 @@ export const CardEquipeMainContainer = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
+    max-width: 100%;
     flex-direction: column;
     align-items: center;
     width: 100%;

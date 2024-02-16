@@ -129,3 +129,6 @@ export const ImgButtonInstagram = styled(FaInstagram)`
   margin-right: 10px;
   flex-shrink: 0;
 `
+export const SpanStyled = styled.span`
+  flex-grow: 1;
+`

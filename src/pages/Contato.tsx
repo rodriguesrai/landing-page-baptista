@@ -9,6 +9,7 @@ import {
   ImgButtonInstagram,
   ImgButtonWhats,
   PageWraperContato,
+  SpanStyled,
   TextsContainer,
 } from '../styles/Contatos.styled'
 import { BackgroundImage } from '../styles/Inicio.styled'
@@ -27,12 +28,12 @@ export default function Contatos() {
           <ButtonsContainer>
             <ButtonStyled href='https://w.app/AI3lmU' target='_blank'>
               <ImgButtonWhats />
-              <span>{'(22) 98146-7225'}</span>
+              <SpanStyled>{'(22) 98146-7225'}</SpanStyled>
             </ButtonStyled>
 
             <ButtonStyled>
               <ImgButtonEmail href='mailto:baptistaadvocacia.rj@gmail.com' />
-              <span>Email</span>
+              <SpanStyled>Email</SpanStyled>
             </ButtonStyled>
 
             <ButtonStyled
@@ -40,7 +41,7 @@ export default function Contatos() {
               target='_blank'
             >
               <ImgButtonInstagram />
-              <span>Instagram</span>
+              <SpanStyled>Instagram</SpanStyled>
             </ButtonStyled>
           </ButtonsContainer>
           <EnderecosContainer>
