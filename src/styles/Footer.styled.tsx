@@ -44,6 +44,7 @@ export const AsideContent = styled.aside`
   text-align: left;
   width: auto;
   height: 80%;
+  word-wrap: break-word;
   h2 {
     font-size: 1.5rem;
     margin-bottom: 2rem;

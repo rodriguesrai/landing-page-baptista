@@ -14,8 +14,7 @@ export const PageWraperContato = styled.div`
   height: 100vh;
   gap: 8rem;
   overflow: hidden;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 2rem;
 
   @media (max-width: 768px) {
     padding-top: 5rem;
@@ -56,10 +55,12 @@ export const EnderecoWithIcon = styled.div`
 
   @media (max-width: 480px) {
     flex-direction: column;
+    text-align: center;
   }
 `
 export const EnderecoText = styled.div`
   display: flex;
+  align-items: left;
   flex-direction: column;
   gap: 0.5rem;
 `

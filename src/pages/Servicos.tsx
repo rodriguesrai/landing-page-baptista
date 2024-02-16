@@ -1,7 +1,7 @@
-import { PageWrapper } from '../components/Servicos/Servicos.styled'
-import { Accordion } from 'react-bootstrap'
-import CardServicos from '../components/Sobre/CardServicos'
+import CardServicos from '../components/Servicos/CardServicos'
 import { FaqData } from '../data/FaqData'
+import { Accordion } from 'react-bootstrap'
+import { PageServicosWrapper } from '../components/Servicos/Servicos.styled'
 import {
   ServicosContainer,
   CardsContainer,
@@ -14,7 +14,7 @@ import {
 export default function Servicos() {
   return (
     <>
-      <PageWrapper>
+      <PageServicosWrapper>
         <ServicosContainer>
           <h1>Serviços</h1>
           <CardsContainer>
@@ -35,7 +35,7 @@ export default function Servicos() {
             </CustomAccordion>
           ))}
         </FaqContainer>
-      </PageWrapper>
+      </PageServicosWrapper>
     </>
   )
 }
