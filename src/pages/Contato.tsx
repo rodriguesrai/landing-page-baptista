@@ -27,12 +27,12 @@ export default function Contatos() {
           <ButtonsContainer>
             <ButtonStyled href='https://w.app/AI3lmU' target='_blank'>
               <ImgButtonWhats />
-              {'(22) 98146-7225'}
+              <span>{'(22) 98146-7225'}</span>
             </ButtonStyled>
 
             <ButtonStyled>
-              <ImgButtonEmail />
-              baptistaadvocacia.rj@gmail.com
+              <ImgButtonEmail href='mailto:baptistaadvocacia.rj@gmail.com' />
+              <span>Email</span>
             </ButtonStyled>
 
             <ButtonStyled
@@ -40,7 +40,7 @@ export default function Contatos() {
               target='_blank'
             >
               <ImgButtonInstagram />
-              Instagram
+              <span>Instagram</span>
             </ButtonStyled>
           </ButtonsContainer>
           <EnderecosContainer>

@@ -53,20 +53,22 @@ export const ImgLogoStyled = styled.img`
 export const ContainerImgInicio = styled.div`
   display: flex;
   max-width: 100vw;
+
   gap: 1rem;
   margin-bottom: 3rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
   }
 `
 
 export const ImgEquipeStyled = styled.img`
-  width: 300px;
+  width: 19rem;
   height: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   @media (max-width: 768px) {
-    height: auto;
+    width: 90%;
   }
 `
 
@@ -132,7 +134,7 @@ export const PostagensSectionContainer = styled.div`
   min-height: auto;
   background-color: lemonchiffon;
   gap: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   padding-top: 3rem;
 
   h2 {
