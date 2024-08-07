@@ -8,9 +8,8 @@ export const HeaderContainer = styled.header`
   align-items: center;
   color: var(--headerColorText);
   top: 0;
-  height: 5vh;
-  min-height: 3rem;
-  max-height: 4rem;
+  padding: 1rem;
+  height: auto;
   justify-content: space-evenly;
   max-width: 100vw;
   width: 100%;

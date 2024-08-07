@@ -1,5 +1,5 @@
 Projeto Site Baptista Advocacia
-Bem-vindo ao repositório do Site Baptista Advocacia! Este readme oferece uma visão geral do projeto e tecnologias utilizadas e instruções para executá-lo em sua máquina.
+Bem-vindo ao repositório do Site Peres Baptista Advocacia! Este readme oferece uma visão geral do projeto e tecnologias utilizadas e instruções para executá-lo em sua máquina.
 
 # Descrição do Projeto
 O Site Baptista Advocacia é uma plataforma desenvolvida para o escritório de advocacia "Baptista Advocacia". O projeto visa fornecer uma presença online eficaz para o escritório, destacando seus serviços, equipe e informações relevantes para clientes em potencial.

@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
-import { H1Styled } from './LogoHeader.styled'
+import ImgLogo from '../../assets/Logotipo-horizontal-branco.png'
+import { Logo } from './LogoHeader.styled'
 
 export default function LogoHeader() {
   return (
     <>
       <Link to='/'>
-        <H1Styled>PB ADVOCACIA</H1Styled>
+        <Logo src={ImgLogo} alt='Logo Escritório' />
       </Link>
     </>
   )

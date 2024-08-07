@@ -7,6 +7,7 @@ import Servicos from './pages/Servicos'
 import LayoutNoFooter from './components/LayoutNoFooter'
 import NotFound from './pages/NotFound'
 import Sobre from './pages/Sobre'
+import PageTest from './pages/PageTest'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Inicio />} />
           <Route path='sobre' element={<Sobre />} />
-          <Route path='servicos' element={<Servicos />} />
+          <Route path='servicos' element={<PageTest />} />
           <Route path='*' element={<NotFound />} />
         </Route>
         <Route path='/' element={<LayoutNoFooter />}>
