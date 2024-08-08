@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
     --headerColorBackground: #b7d3a8;
     --headerColorText: #000000;
     --borderBottomHeader: #106e06ef;
+    --mainColor1: #E2785B;
+    --mainColor2: #004357;
     max-width: 100vw;
     overflow-x: hidden;
   }

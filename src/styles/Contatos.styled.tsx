@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
+import { Box } from '@mui/material'
+import PatternBackground from '../assets/identidade/Pattern azul.png'
 
 export const PageWraperContato = styled.div`
-  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   max-width: 100vw;
   width: 100%;

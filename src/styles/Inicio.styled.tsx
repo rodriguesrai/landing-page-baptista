@@ -68,7 +68,8 @@ export const ContainerImgInicio = styled.div`
 export const ImgEquipeStyled = styled.img`
   width: 19rem;
   height: auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   @media (max-width: 768px) {
     width: 90%;
   }
