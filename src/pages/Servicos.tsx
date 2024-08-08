@@ -1,10 +1,16 @@
-import { Container, Grid, Typography } from '@mui/material'
+import { Container, Grid } from '@mui/material'
 import {
   ContactButton,
+  GridContainer,
+  GridItem,
+  GridItemHalf,
   LineComponent,
-  Paragraph,
+  ParagraphBody1,
+  ParagraphTitle,
   ServiceBox,
   ServicesContainer,
+  TitleH3,
+  TitleH5,
 } from './Servicos.styled'
 
 const services = [
@@ -30,47 +36,42 @@ const services = [
   },
 ]
 
-export default function PageTest() {
+export default function Servicos() {
   return (
-    <div>
+    <>
       <ServicesContainer>
-        <Typography variant='h3'>Nossos serviços</Typography>
-        <Paragraph variant='body1'>
+        <TitleH3>Nossos serviços</TitleH3>
+        <ParagraphTitle>
           Com o Peres Baptista Advocacia, você tem 100% de segurança para se
           preparar para o melhor benefício possível
-        </Paragraph>
+        </ParagraphTitle>
       </ServicesContainer>
 
       <Container>
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
+        <GridContainer>
+          <GridItem>
             <ServiceBox>
-              <Typography variant='h5'>Consulta Previdenciária</Typography>
-              <Typography variant='body1'>
+              <TitleH5>Consulta Previdenciária</TitleH5>
+              <ParagraphTitle>
                 Serviço voltado para quem precisa conhecer os seus direitos ou
                 encontrar uma solução especializada para algum problema
                 previdenciário. Atendemos em todo o Brasil e exterior.
-              </Typography>
-              <ContactButton variant='outlined'>
-                ENTRAR EM CONTATO
-              </ContactButton>
+              </ParagraphTitle>
+              <ContactButton>ENTRAR EM CONTATO</ContactButton>
             </ServiceBox>
-          </Grid>
+          </GridItem>
           <LineComponent></LineComponent>
-          {/* Grid para os serviços restantes */}
           {services.slice(1).map((service, index) => (
-            <Grid item xs={12} sm={6} key={index}>
+            <GridItemHalf key={index}>
               <ServiceBox>
-                <Typography variant='h5'>{service.title}</Typography>
-                <Typography variant='body1'>{service.description}</Typography>
-                <ContactButton variant='outlined'>
-                  ENTRAR EM CONTATO
-                </ContactButton>
+                <TitleH5>{service.title}</TitleH5>
+                <ParagraphBody1>{service.description}</ParagraphBody1>
+                <ContactButton>ENTRAR EM CONTATO</ContactButton>
               </ServiceBox>
-            </Grid>
+            </GridItemHalf>
           ))}
-        </Grid>
+        </GridContainer>
       </Container>
-    </div>
+    </>
   )
 }

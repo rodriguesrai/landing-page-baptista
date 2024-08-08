@@ -1,11 +1,24 @@
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, Grid, Typography } from '@mui/material'
 import styled from 'styled-components'
 
-export const Paragraph = styled(Typography)`
+export const TitleH3 = styled(Typography).attrs({
+  variant: 'h3',
+})``
+
+export const TitleH5 = styled(Typography).attrs({
+  variant: 'h5',
+})``
+
+export const ParagraphTitle = styled(Typography).attrs({
+  variant: 'body1',
+})`
   display: flex;
   align-items: center;
-  color: white;
 `
+
+export const ParagraphBody1 = styled(Typography).attrs({
+  variant: 'body1',
+})``
 
 export const ServicesContainer = styled(Box)`
   display: flex;
@@ -21,11 +34,29 @@ export const ServicesContainer = styled(Box)`
   }
 `
 
+export const GridContainer = styled(Grid).attrs({
+  container: true,
+  spacing: 3,
+})``
+
+export const GridItem = styled(Grid).attrs({
+  item: true,
+  xs: 12,
+})``
+
+export const GridItemHalf = styled(Grid).attrs({
+  item: true,
+  xs: 12,
+  sm: 6,
+})``
+
 export const ServiceBox = styled(Box)`
   margin: 2rem 0;
 `
 
-export const ContactButton = styled(Button)`
+export const ContactButton = styled(Button).attrs({
+  variant: 'outlined',
+})`
   border-color: #00796b;
   color: #00796b;
   margin-top: 1rem;
