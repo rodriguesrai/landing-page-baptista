@@ -1,15 +1,6 @@
 import { Box, Button, Typography } from '@mui/material'
 import styled from 'styled-components'
 
-export const NossosServiços = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 200px;
-  width: 100%;
-  background-color: #28342c;
-  color: white;
-`
 export const Paragraph = styled(Typography)`
   display: flex;
   align-items: center;
