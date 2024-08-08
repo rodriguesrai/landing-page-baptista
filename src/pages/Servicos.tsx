@@ -1,6 +1,14 @@
-import { Container, Grid } from '@mui/material'
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Container,
+  Typography,
+} from '@mui/material'
+import {
+  AccordionsContainer,
   ContactButton,
+  FAQWrapper,
   GridContainer,
   GridItem,
   GridItemHalf,
@@ -12,6 +20,9 @@ import {
   TitleH3,
   TitleH5,
 } from './Servicos.styled'
+import { FaqData } from '../data/FaqData'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import FaqSection from '../components/Servicos/FaqSection'
 
 const services = [
   {
@@ -72,6 +83,7 @@ export default function Servicos() {
           ))}
         </GridContainer>
       </Container>
+      <FaqSection faqs={FaqData} />
     </>
   )
 }

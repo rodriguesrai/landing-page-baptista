@@ -45,7 +45,6 @@ export const ContainerContato = styled.div`
 export const ImgLogoStyled = styled.img`
   width: 300px;
   height: auto;
-  max-width: 100vw;
   @media (max-width: 768px) {
     width: 200px;
     height: auto;

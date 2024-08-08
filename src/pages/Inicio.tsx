@@ -15,7 +15,7 @@ import Beatriz1 from '../assets/Beatriz1.jpg'
 import Beatriz2 from '../assets/Beatriz2.jpg'
 import PostThumb from '../assets/thumbpost1.jpeg'
 import Post from '../components/Inicio/Post'
-import logo from '../assets/914228.svg'
+import logo from '../assets/identidade/Logotipo vertical azul.png'
 
 export default function Inicio() {
   return (
